@@ -18,3 +18,4 @@ It's main features are:
 ### //How to compile and run the code? ###
 
 
+### Class Organization ###
