@@ -1,6 +1,11 @@
 # Project_310
 #### HappieEE group project ####
--
+$$\frac{d}{dx}\frac{\int_{x^\sqrt{x}}^{3x^e}(3e^{2sin(x)})dx}{e^{\sqrt{sin(\int_0^{\sqrt{\pi}}(30+6x^2)dx)}}}\begin{bmatrix}
+x & 3\pi & 8x\\
+cos(x) & 3\sqrt{e} & x^6x\\
+\sqrt{x} & 8 & 18\\
+\end{bmatrix}
+$$
 
 ### //What is the project about? ###
 The purpose of our app, “happieEE”, is to determine if someone is happy or not.happieEE is a social media platform 
