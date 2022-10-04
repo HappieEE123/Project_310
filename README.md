@@ -1,6 +1,6 @@
 # Project_310
 #### HappieEE group project ####
-
+-
 
 ### //What is the project about? ###
 The purpose of our app, “happieEE”, is to determine if someone is happy or not.happieEE is a social media platform 
