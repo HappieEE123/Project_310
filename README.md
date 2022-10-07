@@ -20,7 +20,16 @@ It's main features are:
   * -Feed (You can post results and share to everyone)
 
 
-### //How to compile and run the code? ###
+### //How to compile and run the code?
 
 
-### Class Organization ###
+### Class Organization
+
+
+### Tech Stack
+- Front End: Ionic + Vue
+- Backend: Python Fast API
+- Database: SQLite
+
+
+
