@@ -1,10 +1,10 @@
 # Project_310
 #### HappieEE group project ####
-$$\frac{d}{dx}\frac{\int_{x^\sqrt{x}}^{3x^e}(3e^{2sin(x)})dx}{e^{\sqrt{sin(\int_0^{\sqrt{\pi}}(30+6x^2)dx)}}}\begin{bmatrix}
+$$\frac{\frac{d}{dx}\frac{\int_{x^\sqrt{x}}^{3x^e}(3e^{2sin(x)})dx}{e^{\sqrt{sin(\int_0^{\sqrt{\pi}}(30+6x^2)dx)}}}\begin{bmatrix}
 x & 3\pi & 8x\\
 cos(x) & 3\sqrt{e} & x^6x\\
 \sqrt{x} & 8 & 18\\
-\end{bmatrix}
+\end{bmatrix}\cdot \vec p }{x^t\cdot \frac{d}{dt}(5^t)\cdot(\int^{8x}_{90x+90x^2}(t^e)dt)}
 $$
 
 ### //What is the project about? ###
