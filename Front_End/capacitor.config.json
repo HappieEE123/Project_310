@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "HappieEE",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
