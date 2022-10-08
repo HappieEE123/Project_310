@@ -15,7 +15,7 @@ interface ContainerProps { }
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
     <div className="container" >
-      <Swiper className="mySwiper" slidesPerView={1.1} centeredSlides={true}>
+      <Swiper className="mySwiper" slidesPerView={1.01} centeredSlides={true}>
         <SwiperSlide><Card /></SwiperSlide>
         <SwiperSlide><Card /></SwiperSlide>
         <SwiperSlide><Card /></SwiperSlide>

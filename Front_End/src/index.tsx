@@ -9,9 +9,9 @@ const container = document.getElementById('root');
 const root = createRoot(container!);
 root.render(
   <React.StrictMode>
-    <HashRouter>
+    {/* <HashRouter basename="/"> */}
     <App />
-    </HashRouter>
+    {/* </HashRouter> */}
   </React.StrictMode>
 );
 
