@@ -10,18 +10,12 @@ import { faker } from '@faker-js/faker';
 ;
 
 interface ContainerProps { }
-// const swiper = new Swiper('.swiper',
-//   {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: false,
-//   }
-// );
+
 
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
     <div className="container" >
-      <Swiper className="mySwiper">
+      <Swiper className="mySwiper" slidesPerView={1.1} centeredSlides={true}>
         <SwiperSlide><Card /></SwiperSlide>
         <SwiperSlide><Card /></SwiperSlide>
         <SwiperSlide><Card /></SwiperSlide>
