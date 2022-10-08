@@ -29,13 +29,15 @@ export default function Home() {
   // handleResize();
   // window.addEventListener('resize', handleResize); //not posible for loop 
   return (
-      <IonPage style={{ width: Math.min(window.innerHeight * 9 / 16, window.innerWidth) }}>
+
+      <IonPage style={{ width: Math.min(window.innerHeight * 9 / 16, window.innerWidth) ,        position: 'absolute', left: '50%', 
+      transform: 'translate(-50%, 0)'}}>
         <IonHeader>
           <IonToolbar>
             <IonTitle>HappieEE</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonContent fullscreen>
+        <IonContent>
           {/* <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">HappieEE</IonTitle>
@@ -45,6 +47,7 @@ export default function Home() {
           <ExploreContainer />
         </IonContent>
       </IonPage>
+
   );
 
 };

@@ -3,7 +3,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
   /* top: 50%; */
   /* transform: translateY(-50%); */
 }

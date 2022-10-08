@@ -26,16 +26,18 @@ import './theme/variables.css';
 setupIonicReact();
 
 const App: React.FC = () => (
-  <IonApp>
+  // <div style={{ backgroundColor: "lightgrey", textAlign: "center" }}>
+  <IonApp style={{ backgroundColor: "lightgrey" }}>
     <IonReactRouter>
       <IonRouterOutlet>
         <HashRouter basename="/home">
-          <Home />
+          <Home/>
         </HashRouter>
 
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp >
+  // </div>
 );
 
 export default App;
