@@ -35,7 +35,7 @@ const App: React.FC = () => (
 
       </IonRouterOutlet>
     </IonReactRouter>
-  </IonApp>
+  </IonApp >
 );
 
 export default App;
