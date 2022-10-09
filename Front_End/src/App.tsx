@@ -27,7 +27,7 @@ setupIonicReact();
 
 const App: React.FC = () => (
   // <div style={{ backgroundColor: "lightgrey", textAlign: "center" }}>
-  <IonApp style={{ backgroundColor: "lightgrey" }}>
+  <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
         <HashRouter basename="/home">

@@ -34,11 +34,11 @@ export default function Home() {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        {/* <IonHeader collapse="condense">
+        <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">HappieEE</IonTitle>
-          </IonToolbar> */}
-        {/* </IonHeader> */}
+          </IonToolbar> 
+        </IonHeader>
         {/* {mywidth} */}
         <ExploreContainer />
       </IonContent>
