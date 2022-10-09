@@ -21,7 +21,7 @@ export default function Home() {
   // }
 
   // handleResize();
-  window.addEventListener('resize', handleResize); //not posible for loop 
+  // window.addEventListener('resize', handleResize); //not posible for loop 
   return (
 
     <IonPage style={{
