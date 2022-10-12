@@ -18,3 +18,22 @@
     width: max-content;
     display:inline-block;
 }
+
+#avatar{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.chip{
+    border-radius: 999999px;
+    padding: 10px;
+}
+/* 
+.filledChip{
+        border-radius: 999999px;
+        background-color: lightsteelblue;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+} */

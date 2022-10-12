@@ -3,6 +3,7 @@
     "@faker-js/faker": "^7.5.0"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "swiper": "^8.4.3"
   }
 }

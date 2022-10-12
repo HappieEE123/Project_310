@@ -10,9 +10,11 @@ const root = createRoot(container!);
 root.render(
   <React.StrictMode>
     {/* <HashRouter basename="/"> */}
-    <App />
+    {/* <div id="background" style={{ backgroundColor: "lightgrey", textAlign: "center" }}> */}
+      <App />
+    {/* </div> */}
     {/* </HashRouter> */}
-  </React.StrictMode>
+  </React.StrictMode >
 );
 
 // If you want your app to work offline and load faster, you can change
