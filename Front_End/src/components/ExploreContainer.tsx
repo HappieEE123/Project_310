@@ -1,8 +1,8 @@
 import './ExploreContainer.css';
 import Card from "./Card"
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/bundle";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
+// import "swiper/css/bundle";
 // https://codesandbox.io/s/10st98?file=/src/App.jsx:83-134
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonIcon, IonLabel, IonButton } from '@ionic/react';
 import { pin, wifi, wine, warning, walk, cellular } from 'ionicons/icons';
@@ -21,9 +21,10 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
 
     <div className="container" style={{ height: "100%" }}>
-      <Swiper className="mySwiper" slidesPerView={1.01} centeredSlides={true}>
-        {numbers.map((myid) => <div id={myid.toString()} key={myid}>{vertical ? <Card key={myid}/> : <SwiperSlide key={myid}><Card /></SwiperSlide>}</div>)}
-      </Swiper>
+      {/* <Swiper className="mySwiper" slidesPerView={1.01} centeredSlides={true}> */}
+        {/* {numbers.map((myid) => <div id={myid.toString()} key={myid}>{vertical ? <Card key={myid}/> : <SwiperSlide key={myid}><Card /></SwiperSlide>}</div>)} */}
+        {numbers.map((myid) => <div id={myid.toString()} key={myid}>{vertical ? <Card key={myid}/> : <p></p>}</div>)}
+      {/* </Swiper> */}
     </div>
 
   );

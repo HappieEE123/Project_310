@@ -1,6 +1,7 @@
 from typing import Union
 
 from fastapi import FastAPI, File, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 import tensorflow as tf #forget
 import numpy as np
 from PIL import Image
@@ -10,12 +11,14 @@ app = FastAPI()
 model = tf.keras.models.load_model('COSC310.unziped.mod')
 
 origins = [
+    "*",#Because gitpod fowarding this has to be *
     "http://localhost.tiangolo.com",
     "https://localhost.tiangolo.com",
     "http://localhost",
     "http://localhost:8080",
     "http://coder.weasoft.com:1010",
-    "https://happieee.weasoft.com"
+    "https://happieee.weasoft.com",
+    "https://8100-happieee123-project310-udhq8dxnduq.ws-us70.gitpod.io/"
 ]
 
 app.add_middleware(

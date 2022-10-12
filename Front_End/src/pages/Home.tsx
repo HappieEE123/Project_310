@@ -1,5 +1,5 @@
 import { IonContent, IonModal, IonButtons, useIonActionSheet, IonProgressBar, IonButton, IonItem, IonInput, IonList, IonBackButton, IonTextarea, IonFab, IonFabButton, IonIcon, IonHeader, IonPage, IonTitle, IonToolbar, setupIonicReact } from '@ionic/react';
-import { camera, addOutline } from 'ionicons/icons';
+import { camera, addOutline, paperPlaneOutline } from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 import React, { useState } from 'react';
@@ -21,6 +21,7 @@ export default function Home() {
   //     setData(tmp)  
   //   }
   // }
+  var file: File; //https://stackoverflow.com/questions/51722363/create-file-object-type-in-typescript
   const [isOpen, setIsOpen] = useState(false);
   // handleResize();
   // window.addEventListener('resize', handleResize); //not posible for loop 
@@ -28,8 +29,10 @@ export default function Home() {
   const [result, setResult] = useState<OverlayEventDetail>();
 
   function onFileChanged(event: React.ChangeEvent<HTMLInputElement>) {
-    var file = event.target.value;
-    console.log(file)
+    file = event.target.files![0];
+    const url = URL.createObjectURL(file);
+    console.log(url);
+    document.getElementById("UploadBtn")!.innerHTML = `<img src=${url} />`
   }
 
   async function popup() {
@@ -62,6 +65,31 @@ export default function Home() {
     })
   }
 
+
+  function send() {
+
+    // https://betterprogramming.pub/a-complete-guide-of-file-uploading-in-javascript-2c29c61336f5
+    let formData = new FormData();
+    formData.set('file', file!);
+
+    //https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects
+
+    formData.append("file", file);
+    const request = new XMLHttpRequest();
+    request.open("POST", "https://8000-happieee123-project310-udhq8dxnduq.ws-us70.gitpod.io/getHappiness");
+
+    request.addEventListener("readystatechange", () => {
+      console.log(request.readyState);
+      if (request.readyState === 4 && request.status === 200) {
+        alert(`The happiness score is ${Math.round(JSON.parse(request.responseText).score*1000)/10}`)
+      } else if (request.readyState === 4) {
+        console.log("could not fetch the data");
+      }
+    });
+    
+    request.send(formData);
+
+  }
   return (
     <IonPage style={{
       width: Math.min(window.innerHeight * 9 / 16, window.innerWidth), position: 'absolute', left: '50%',
@@ -120,9 +148,9 @@ export default function Home() {
                   </IonButton>
                   <p>Only jpeg and png allowed.</p>
                   <br />
-                  <IonButton color="success" expand="block" id="send">
+                  <IonButton color="success" expand="block" id="send" onClick={send}>
                     {/* (click)="sendout();" */}
-                    <IonIcon name="paper-plane-outline"></IonIcon>
+                    <IonIcon icon={paperPlaneOutline}></IonIcon>
                     Send Out
                   </IonButton>
                   <IonProgressBar type="indeterminate" style={{ visibility: "hidden" }} id="loading"></IonProgressBar>
