@@ -1,0 +1,13 @@
+Users:,,,,,,,,Post Table,,,,,,,
+Username,Hash+salt,(profile pic is just id.png under a dir),,,,,,UserID,Post ID,Des,Happiness,Likes Count,Comment Counts,,profile pic is just id.png under a dir
+varchar(20),varchar(40~),,,,,,,int,int,vatchar(300),int (985 = 98.5),int,int,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Comment Table:,,,,,,,,,,,,,,,
+Comment ID,Like Count,Post ID* ,Comment Text,UserID,,,,,,,,,,,
+int,int,int,varchar(200),int,,,,,,,,,,,
