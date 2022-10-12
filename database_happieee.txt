@@ -1,0 +1,25 @@
+//TODO add delete on 
+CREATE TABLE user (
+ 	user_id INT,
+	user_name VARCHAR(20),
+	password VARCHAR(40),
+	PRIMARY KEY(userid)
+);
+CREATE TABLE comment(
+	comment_id INT,
+	user_id
+	like_count INT,
+	post_id INT,
+	comment_text VARCHAR(200),
+	PRIMARY KEY(comment_id)
+)
+CREATE TABLE post(
+	post_id INT,
+	user_id INT,
+	description VARCHAR(300),
+	happiness INT,
+	likes_count,
+	comment_count,
+	PRIMARY KEY(post_id)
+)
+	
