@@ -9,6 +9,23 @@ app = FastAPI()
 
 model = tf.keras.models.load_model('COSC310.unziped.mod')
 
+origins = [
+    "http://localhost.tiangolo.com",
+    "https://localhost.tiangolo.com",
+    "http://localhost",
+    "http://localhost:8080",
+    "http://coder.weasoft.com:1010",
+    "https://happieee.weasoft.com"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 @app.post("/getHappiness")
 async def create_file(file: UploadFile):
     #https://github.com/tiangolo/fastapi/discussions/4308
