@@ -76,7 +76,7 @@ export default function Home() {
 
     formData.append("file", file);
     const request = new XMLHttpRequest();
-    request.open("POST", "https://8000-happieee123-project310-udhq8dxnduq.ws-us70.gitpod.io/getHappiness");
+    request.open("POST", "https://api.weasoft.com/getHappiness");
 
     request.addEventListener("readystatechange", () => {
       console.log(request.readyState);
