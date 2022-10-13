@@ -137,7 +137,7 @@ export default function Home() {
                 </IonItem>
 
                 <input type="file" accept="image/*" style={{ display: "none" }} id="fileInputC" capture name="Camera" onChange={onFileChanged}></input>
-                <input type="file" accept="image/*" style={{ display: "none" }} id="fileInputG" capture name="Gallery" onChange={onFileChanged}></input>
+                <input type="file" accept="image/*" style={{ display: "none" }} id="fileInputG" name="Gallery" onChange={onFileChanged}></input>
                 {/* style="display:none;" id=fileInputC capture="camera" #fileInputC name="Camera" (change)="onFileChanged($event)"> */}
                 {/* <input type="file" accept="image/*"></input> */}
                 {/* </input> style="display:none;" id=fileInputG name="Gallery" (change)="onFileChanged($event)"> */}
