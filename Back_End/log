@@ -1,0 +1,54 @@
+2022-10-13 01:36:24.463417: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-13 01:36:25.099273: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-13 01:36:25.099333: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-13 01:36:25.207373: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-13 01:36:26.442517: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-13 01:36:26.442636: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-13 01:36:26.442648: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-13 01:36:27.802918: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2022-10-13 01:36:27.803002: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-13 01:36:27.803040: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-13 01:36:27.803633: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [10698]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     206.87.5.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     167.248.133.63:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     43.153.10.221:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.61.187.13:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.213.176:0 - "GET /hudson HTTP/1.1" 404 Not Found
+INFO:     173.252.111.17:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     173.252.111.119:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     173.252.111.4:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     173.252.111.20:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     173.252.111.112:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     173.252.111.17:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     173.252.111.17:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     173.252.111.9:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     173.252.111.4:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     161.130.189.198:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     161.130.189.198:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     134.122.1.51:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     134.122.1.51:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     128.1.248.26:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.146.59:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.146.59:0 - "GET / HTTP/1.1" 404 Not Found

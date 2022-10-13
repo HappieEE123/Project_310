@@ -1,7 +1,9 @@
 fastapi
 uvicorn[standard]
 tensorflow
+#tflite-runtime
 numpy
 pandas
 Pillow
 python-multipart
+opencv-python
