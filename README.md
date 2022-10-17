@@ -30,7 +30,7 @@ It's main features are:
 ### Tech Stack
 - Front End: Ionic + React 
 - Backend: Python Fast API
-- Database: SQLite
+- Database: SQLite/MySQL
 
 
 
