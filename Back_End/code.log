@@ -33,3 +33,58 @@
 [03:15:21] [127.0.0.1][701d78e5][ExtensionHostConnection] The client has reconnected.
 [03:19:12] [127.0.0.1][e6727e30][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
 [03:19:13] [127.0.0.1][701d78e5][ExtensionHostConnection] <13859> Extension Host Process exited with code: 0, signal: null.
+[23:25:24] [127.0.0.1][3e262136][ManagementConnection] New connection established.
+[23:25:26] [127.0.0.1][647d67c4][ExtensionHostConnection] New connection established.
+[23:25:26] [127.0.0.1][647d67c4][ExtensionHostConnection] <19720> Launched Extension Host Process.
+[IPC Library: Pty Host]  INFO Persistent process "1": Replaying 2727 chars and 1 size events
+[23:26:54] [127.0.0.1][3e262136][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[23:26:55] [127.0.0.1][647d67c4][ExtensionHostConnection] <19720> Extension Host Process exited with code: 0, signal: null.
+[23:28:44] [127.0.0.1][16a9c5a6][ManagementConnection] New connection established.
+[23:28:46] [127.0.0.1][28b4f3cd][ExtensionHostConnection] New connection established.
+[23:28:46] [127.0.0.1][28b4f3cd][ExtensionHostConnection] <19935> Launched Extension Host Process.
+[IPC Library: Pty Host]  INFO Persistent process "1": Replaying 2727 chars and 1 size events
+[23:50:25] [127.0.0.1][16a9c5a6][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[23:50:25] [127.0.0.1][28b4f3cd][ExtensionHostConnection] <19935> Extension Host Process exited with code: 0, signal: null.
+[00:01:43] [127.0.0.1][e9451fa6][ManagementConnection] New connection established.
+[00:01:45] [127.0.0.1][c72b8921][ExtensionHostConnection] New connection established.
+[00:01:45] [127.0.0.1][c72b8921][ExtensionHostConnection] <21180> Launched Extension Host Process.
+[IPC Library: Pty Host]  INFO Persistent process "1": Replaying 12954 chars and 1 size events
+[00:02:19] [127.0.0.1][e9451fa6][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[00:02:19] [127.0.0.1][c72b8921][ExtensionHostConnection] <21180> Extension Host Process exited with code: 0, signal: null.
+[02:58:46] [127.0.0.1][6651c904][ManagementConnection] New connection established.
+[02:58:48] [127.0.0.1][f85ce534][ExtensionHostConnection] New connection established.
+[02:58:48] [127.0.0.1][f85ce534][ExtensionHostConnection] <21762> Launched Extension Host Process.
+[IPC Library: Pty Host]  INFO Persistent process "1": Replaying 12954 chars and 1 size events
+[03:00:53] [127.0.0.1][6651c904][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+Error: Unexpected SIGPIPE
+    at process.<anonymous> (/usr/lib/code-server/vendor/modules/code-oss-dev/out/bootstrap.js:1:370)
+    at process.emit (events.js:400:28)
+[03:37:31] [127.0.0.1][6651c904][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[03:37:31] [127.0.0.1][a8f61368][ManagementConnection] New connection established.
+[03:37:33] [127.0.0.1][a8f61368][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+Error: Unexpected SIGPIPE
+    at process.<anonymous> (/usr/lib/code-server/vendor/modules/code-oss-dev/out/bootstrap.js:1:370)
+    at process.emit (events.js:400:28)
+[03:42:32] [127.0.0.1][6651c904][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+[03:42:33] [127.0.0.1][f85ce534][ExtensionHostConnection] <21762> Extension Host Process exited with code: 0, signal: null.
+[2022-10-14T23:05:16.934Z] info  code-server 4.0.1 735c6da829535969ff7193c79379299e4a1cb9bc
+[2022-10-14T23:05:16.940Z] info  Using user-data-dir ~/.local/share/code-server
+[2022-10-14T23:05:16.982Z] info  Using config file ~/.config/code-server/config.yaml
+[2022-10-14T23:05:16.982Z] info  HTTP server listening on http://127.0.0.1:8000/ 
+[2022-10-14T23:05:16.983Z] info    - Authentication is enabled
+[2022-10-14T23:05:16.983Z] info      - Using password from ~/.config/code-server/config.yaml
+[2022-10-14T23:05:16.983Z] info    - Not serving HTTPS 
+[05:10:06] Extension host agent started.
+[05:10:08] [127.0.0.1][03fcfe2e][ManagementConnection] New connection established.
+[05:10:09] [127.0.0.1][bfa2785d][ExtensionHostConnection] New connection established.
+[05:10:09] [127.0.0.1][bfa2785d][ExtensionHostConnection] <3105> Launched Extension Host Process.
+[05:11:02] [127.0.0.1][03fcfe2e][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[05:11:02] [127.0.0.1][bfa2785d][ExtensionHostConnection] <3105> Extension Host Process exited with code: 0, signal: null.
+[06:05:10] [127.0.0.1][ac6292ba][ManagementConnection] New connection established.
+[06:05:11] [127.0.0.1][1bf047d9][ExtensionHostConnection] New connection established.
+[06:05:11] [127.0.0.1][1bf047d9][ExtensionHostConnection] <3526> Launched Extension Host Process.
+[06:06:17] [127.0.0.1][ac6292ba][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[06:06:18] [127.0.0.1][1bf047d9][ExtensionHostConnection] <3526> Extension Host Process exited with code: 0, signal: null.
+[06:06:18] [127.0.0.1][f49c2c75][ManagementConnection] New connection established.
+[06:06:19] [127.0.0.1][ca3b121e][ExtensionHostConnection] New connection established.
+[06:06:19] [127.0.0.1][ca3b121e][ExtensionHostConnection] <3828> Launched Extension Host Process.

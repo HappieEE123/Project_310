@@ -17,3 +17,962 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 INFO:     Started server process [16977]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
+INFO:     130.180.51.26:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16977]
+2022-10-13 03:54:00.619203: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-13 03:54:00.952626: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-13 03:54:00.952778: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-13 03:54:01.019414: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-13 03:54:02.150411: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-13 03:54:02.150747: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-13 03:54:02.150778: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-13 03:54:03.257113: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-13 03:54:03.258718: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-13 03:54:03.258825: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-13 03:54:03.259756: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [17184]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     206.87.5.5:0 - "GET / HTTP/1.1" 404 Not Found
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 230ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 22ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 38ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+INFO:     161.130.189.198:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     161.130.189.198:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     161.130.189.198:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     161.130.189.198:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     161.130.189.198:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     161.130.189.198:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     161.130.189.198:0 - "GET / HTTP/1.1" 404 Not Found
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17184]
+2022-10-13 04:08:02.533388: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-13 04:08:02.836226: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-13 04:08:02.836315: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-13 04:08:02.887625: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-13 04:08:03.822422: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-13 04:08:03.822735: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-13 04:08:03.822772: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-13 04:08:05.060238: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-13 04:08:05.060460: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-13 04:08:05.060531: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-13 04:08:05.061120: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [17382]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 189ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 53, in create_file
+    cv2.imwrite("/home/wg25r/tmp_"+str(random.random())+".png", resized_img)
+NameError: name 'random' is not defined
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 23ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 53, in create_file
+    cv2.imwrite("/home/wg25r/tmp_"+str(random.random())+".png", resized_img)
+NameError: name 'random' is not defined
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17382]
+2022-10-13 04:08:36.436208: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-13 04:08:36.640877: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-13 04:08:36.640955: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-13 04:08:36.682584: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-13 04:08:37.529564: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-13 04:08:37.529903: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-13 04:08:37.529948: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-13 04:08:38.585011: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-13 04:08:38.585167: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-13 04:08:38.585236: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-13 04:08:38.585811: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [17404]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 198ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 26ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 20ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 41, in create_file
+    face  = crop_model.detectMultiScale(img)[0]
+IndexError: tuple index out of range
+INFO:     157.55.39.101:40192 - "GET /docs HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17404]
+2022-10-13 04:13:00.343243: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-13 04:13:00.567966: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-13 04:13:00.568087: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-13 04:13:00.610104: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-13 04:13:01.424248: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-13 04:13:01.424447: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-13 04:13:01.424476: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-13 04:13:02.565740: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-13 04:13:02.565972: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-13 04:13:02.566043: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-13 04:13:02.566536: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [17477]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 234ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+INFO:     95.216.155.231:52872 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 27ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 20ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 19ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/wg25r/Project_310/Back_End']
+INFO:     Uvicorn running on http://0.0.0.0:1080 (Press CTRL+C to quit)
+INFO:     Started reloader process [17724] using WatchFiles
+2022-10-13 04:26:15.364946: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-13 04:26:16.002998: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-13 04:26:16.003163: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-13 04:26:16.124932: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-13 04:26:17.494850: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-13 04:26:17.495220: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-13 04:26:17.495260: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-13 04:26:19.388710: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-13 04:26:19.388930: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-13 04:26:19.389058: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-13 04:26:19.389672: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [17733]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     206.87.5.5:0 - "GET / HTTP/1.1" 404 Not Found
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 220ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 29ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 25ms/step
+INFO:     206.87.5.5:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     161.130.190.20:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     161.130.190.20:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     161.130.190.20:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     161.130.190.20:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     161.130.190.20:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     161.130.190.20:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     161.130.190.20:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     41.79.235.92:0 - "GET /Electron/download/windows/%5CProgram%20Files%5C3CX%20Phone%20System%5CData%5CDB%5Cbase%5C16384%5C16393 HTTP/1.1" 404 Not Found
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 31ms/step
+INFO:     210.1.198.136:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     161.130.189.198:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     161.130.189.198:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 29ms/step
+INFO:     206.87.5.250:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 19ms/step
+INFO:     206.87.5.250:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 18ms/step
+INFO:     206.87.5.250:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 19ms/step
+INFO:     210.1.198.136:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 22ms/step
+INFO:     210.1.198.136:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     206.87.5.250:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 22ms/step
+INFO:     206.87.5.250:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     133.242.174.119:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     133.242.140.127:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     76.235.15.9:64743 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 31ms/step
+INFO:     206.87.5.6:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 34ms/step
+INFO:     206.87.5.6:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     152.89.196.211:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 404 Not Found
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     87.138.233.234:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 19ms/step
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     65.49.20.71:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+INFO:     213.55.225.92:36722 - "GET /docs HTTP/1.1" 200 OK
+INFO:     213.55.225.92:36722 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     152.89.196.211:0 - "POST /mifs/.%3B/services/LogService HTTP/1.1" 404 Not Found
+INFO:     80.214.76.209:5186 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     80.214.76.209:5186 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     80.214.76.209:5188 - "GET /docs HTTP/1.1" 200 OK
+INFO:     80.214.76.209:5188 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     77.95.65.68:47946 - "GET /docs HTTP/1.1" 200 OK
+INFO:     77.95.65.68:47958 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     193.118.53.194:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     87.196.73.250:48474 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     87.196.73.250:48474 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     94.134.111.229:32083 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     94.134.111.229:32085 - "GET /docs HTTP/1.1" 200 OK
+INFO:     94.134.111.229:32085 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     94.134.111.229:32089 - "GET /docs HTTP/1.1" 200 OK
+INFO:     94.134.111.229:32089 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     34.76.96.55:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     125.18.25.132:52176 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     125.18.25.132:52176 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     192.241.215.47:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.211:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.211:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 121ms/step
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     93.239.200.94:60304 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     93.239.200.94:60304 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     93.239.200.94:40686 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     152.89.196.211:0 - "GET /console/ HTTP/1.1" 404 Not Found
+INFO:     136.243.220.212:0 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     136.243.220.212:43900 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     87.100.251.104:16639 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     87.8.203.111:28629 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     87.8.203.111:28629 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     20.14.95.62:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     20.14.95.62:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     49.36.144.224:49716 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     49.36.144.224:49716 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     49.36.144.224:49719 - "GET /docs HTTP/1.1" 200 OK
+INFO:     49.36.144.224:49719 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     192.241.213.155:0 - "GET /actuator/health HTTP/1.1" 404 Not Found
+INFO:     2.138.91.242:40358 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2.138.91.242:40358 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     171.33.237.196:62246 - "GET /docs HTTP/1.1" 200 OK
+INFO:     171.33.237.196:45092 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     152.89.196.23:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     159.138.115.17:0 - "POST /temporary/login.html HTTP/1.1" 404 Not Found
+INFO:     159.138.115.17:0 - "POST /passwd/reset/index.php HTTP/1.1" 404 Not Found
+INFO:     159.138.115.17:0 - "POST /display2/mail/file/163frame.php HTTP/1.1" 404 Not Found
+INFO:     159.138.115.17:0 - "POST /mail/file/index.php HTTP/1.1" 404 Not Found
+INFO:     159.138.115.17:0 - "POST /mail/file/login.php HTTP/1.1" 404 Not Found
+INFO:     159.138.115.17:0 - "POST /mail/file/linkin.php HTTP/1.1" 404 Not Found
+INFO:     159.138.115.17:0 - "POST /mail/file/163frame.php HTTP/1.1" 404 Not Found
+INFO:     159.138.115.17:0 - "POST /mail163/index.php HTTP/1.1" 404 Not Found
+INFO:     192.241.212.172:0 - "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.1" 404 Not Found
+INFO:     192.241.213.175:0 - "GET /owa/auth/x.js HTTP/1.1" 404 Not Found
+INFO:     192.241.212.172:0 - "GET /owa/auth/logon.aspx HTTP/1.1" 404 Not Found
+INFO:     103.168.154.76:42333 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     103.168.154.76:42333 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     84.84.36.147:38792 - "GET /docs HTTP/1.1" 200 OK
+INFO:     84.84.36.147:38792 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     84.84.36.147:38806 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 32ms/step
+INFO:     84.84.36.147:38850 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     152.89.196.211:0 - "POST /Autodiscover/Autodiscover.xml HTTP/1.1" 404 Not Found
+INFO:     209.97.158.1:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     209.97.158.1:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     209.97.158.1:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.221.192.90:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Unsupported upgrade request.
+INFO:     116.202.35.113:43782 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     116.202.35.113:43808 - "GET /docs HTTP/1.1" 200 OK
+WARNING:  Unsupported upgrade request.
+INFO:     36.37.185.64:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     36.37.185.64:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     137.226.113.44:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.48.150.172:54870 - "GET /docs HTTP/1.1" 200 OK
+INFO:     198.48.150.172:54870 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     146.75.207.17:6547 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     185.100.87.136:0 - "POST /FD873AC4-CF86-4FED-84EC-4BD59C6F17A7 HTTP/1.1" 404 Not Found
+INFO:     206.189.107.72:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     206.189.107.72:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     206.189.107.72:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /_ignition/execute-solution HTTP/1.1" 404 Not Found
+INFO:     95.108.213.76:34798 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     95.108.213.76:34798 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     185.180.143.72:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     165.22.196.118:0 - "GET /panel/login.php HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.241.213.181:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     128.1.248.26:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     20.254.160.123:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     24.209.250.204:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     24.209.250.204:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     24.209.250.204:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     24.209.250.204:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     103.149.192.123:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17733]
+2022-10-13 23:23:10.290847: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-13 23:23:10.935294: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-13 23:23:10.935384: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-13 23:23:11.008524: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-13 23:23:12.366500: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-13 23:23:12.366772: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-13 23:23:12.367047: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-13 23:23:14.305507: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-13 23:23:14.306070: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-13 23:23:14.306206: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-13 23:23:14.307447: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [19674]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 271ms/step
+INFO:     206.87.5.6:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.87.5.6:52666 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.5.6:52666 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     192.241.215.92:0 - "GET /autodiscover/autodiscover.json?@zdi/Powershell HTTP/1.1" 404 Not Found
+INFO:     Will watch for changes in these directories: ['/home/wg25r/Project_310/Back_End']
+INFO:     Uvicorn running on http://0.0.0.0:1080 (Press CTRL+C to quit)
+INFO:     Started reloader process [21105] using WatchFiles
+2022-10-13 23:56:54.172186: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-13 23:56:54.374398: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-13 23:56:54.374482: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-13 23:56:54.414272: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-13 23:56:55.201398: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-13 23:56:55.202093: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-13 23:56:55.202135: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-13 23:56:56.228685: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-13 23:56:56.228811: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-13 23:56:56.228854: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-13 23:56:56.229244: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [21107]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 202ms/step
+INFO:     206.87.5.6:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 26ms/step
+INFO:     206.87.5.6:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 20ms/step
+INFO:     206.87.5.6:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     183.136.225.35:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     183.136.225.35:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     183.136.225.35:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     183.136.225.35:0 - "GET /robots.txt HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Unsupported upgrade request.
+WARNING:  Invalid HTTP request received.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 34ms/step
+INFO:     206.87.4.209:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 26ms/step
+INFO:     206.87.4.209:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 25ms/step
+INFO:     206.87.4.209:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.87.4.209:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 21ms/step
+INFO:     206.87.4.209:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 22ms/step
+INFO:     206.87.4.209:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.87.4.209:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+INFO:     206.87.4.209:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.4.209:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     206.87.4.209:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     206.87.4.209:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     206.87.4.209:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 39, in create_file
+    img = np.array(Image.open(io.BytesIO(request_object_content)).convert('L'))
+  File "/usr/lib64/python3.10/site-packages/PIL/Image.py", line 3123, in open
+    raise UnidentifiedImageError(
+PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7f1a9c283e20>
+INFO:     20.169.5.75:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     20.169.5.75:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     76.124.91.6:59132 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     76.124.91.6:59133 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     76.124.91.6:59145 - "GET /docs HTTP/1.1" 200 OK
+INFO:     76.124.91.6:59145 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     76.124.91.6:59160 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     152.89.196.23:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 177ms/step
+INFO:     206.87.6.3:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     206.87.6.3:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 23ms/step
+INFO:     206.87.6.3:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     192.241.216.159:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     192.241.220.212:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     157.55.39.0:12032 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 34ms/step
+INFO:     205.250.238.199:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 33ms/step
+INFO:     205.250.238.199:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 24ms/step
+INFO:     205.250.238.199:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 25ms/step
+INFO:     205.250.238.199:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 24ms/step
+INFO:     205.250.238.199:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 18ms/step
+INFO:     205.250.238.199:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     154.53.36.169:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.216.102:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     205.210.31.137:0 - "GET / HTTP/1.1" 404 Not Found
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 32ms/step
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 26ms/step
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 31ms/step
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 31ms/step
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 25ms/step
+INFO:     142.231.34.252:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     106.223.154.180:5327 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     106.223.154.180:5327 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     106.223.154.180:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 18ms/step
+INFO:     106.223.154.180:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 31ms/step
+INFO:     106.223.154.180:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     103.114.105.206:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     103.114.105.206:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     194.165.17.23:0 - "POST /sdk/ HTTP/1.1" 404 Not Found
+INFO:     34.76.96.55:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.218.14:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     89.248.165.250:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     87.236.176.91:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     165.227.121.92:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     165.227.121.92:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     103.220.75.139:21397 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     103.220.75.139:21397 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     103.220.75.139:42664 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     103.220.75.139:21457 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Unsupported upgrade request.
+INFO:     64.62.197.104:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     92.118.36.206:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.213.55:0 - "GET /actuator/health HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.241.205.22:0 - "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.1" 404 Not Found
+INFO:     192.241.219.55:0 - "GET /owa/auth/x.js HTTP/1.1" 404 Not Found
+INFO:     192.241.205.22:0 - "GET /owa/auth/logon.aspx HTTP/1.1" 404 Not Found
+INFO:     92.204.146.20:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     83.143.86.62:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     Will watch for changes in these directories: ['/home/wg25r/Project_310/Back_End']
+INFO:     Uvicorn running on http://0.0.0.0:1080 (Press CTRL+C to quit)
+INFO:     Started reloader process [1174] using WatchFiles
+2022-10-14 23:02:27.002873: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-14 23:02:27.543065: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-14 23:02:27.543212: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-14 23:02:27.617098: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-14 23:02:29.545361: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-14 23:02:29.545647: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-14 23:02:29.545685: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-14 23:02:32.512485: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-14 23:02:32.513024: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-14 23:02:32.513129: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-14 23:02:32.514371: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [1176]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:56478 - "GET / HTTP/1.1" 404 Not Found
+INFO:     Will watch for changes in these directories: ['/home/wg25r/Project_310/Back_End']
+ERROR:    [Errno 98] Address already in use
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 326ms/step
+INFO:     206.87.4.189:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 19ms/step
+INFO:     206.87.4.189:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 31ms/step
+INFO:     206.87.4.189:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 23ms/step
+INFO:     206.87.4.189:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 24ms/step
+INFO:     206.87.4.189:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 28ms/step
+INFO:     206.87.4.189:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     87.236.176.174:54183 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.216.92:0 - "GET /autodiscover/autodiscover.json?@zdi/Powershell HTTP/1.1" 404 Not Found
+INFO:     162.221.192.26:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     164.52.24.166:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     51.210.166.86:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+INFO:     205.185.116.25:51314 - "GET / HTTP/1.1" 404 Not Found
+INFO:     205.185.116.25:51314 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Unsupported upgrade request.
+INFO:     109.248.6.57:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.217.10:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     221.199.14.247:42224 - "GET / HTTP/1.1" 404 Not Found
+INFO:     184.105.139.89:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     152.32.188.74:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     161.35.52.126:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     35.216.188.92:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     Will watch for changes in these directories: ['/home/wg25r/Project_310/Back_End']
+INFO:     Uvicorn running on http://0.0.0.0:1080 (Press CTRL+C to quit)
+INFO:     Started reloader process [15720] using WatchFiles
+2022-10-16 01:21:44.637564: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-16 01:21:45.435173: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-16 01:21:45.435327: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-16 01:21:45.511800: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-16 01:21:46.978230: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-16 01:21:46.978513: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-16 01:21:46.978550: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-16 01:21:49.005937: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-16 01:21:49.006581: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-16 01:21:49.006766: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-16 01:21:49.007993: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [15735]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     164.92.255.32:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     121.9.200.242:0 - "GET /api/v2/cmdb/system/admin HTTP/1.1" 404 Not Found
+INFO:     194.165.17.23:0 - "GET /owa/auth/logon.aspx?replaceCurrent=1&url=https://66.42.65.160/ecp HTTP/1.1" 404 Not Found
+INFO:     192.241.214.163:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     137.184.10.44:61953 - "GET / HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     Will watch for changes in these directories: ['/home/wg25r/Project_310/Back_End']
+ERROR:    [Errno 98] Address already in use
+INFO:     Will watch for changes in these directories: ['/home/wg25r/Project_310/Back_End']
+ERROR:    [Errno 98] Address already in use
+INFO:     167.94.138.61:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.138.61:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     43.135.123.64:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 404 Not Found
+INFO:     34.78.6.216:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.146.57:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.146.57:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.218.75:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Unsupported upgrade request.
+INFO:     172.105.208.132:40714 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.217.237:0 - "GET /autodiscover/autodiscover.json?@zdi/Powershell HTTP/1.1" 404 Not Found
+INFO:     174.138.61.44:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.11.57.48:0 - "POST /ajax HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     95.108.213.76:39062 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     95.108.213.76:39062 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+WARNING:  Invalid HTTP request received.
+INFO:     152.89.196.23:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "OPTIONS / HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /nice%20ports%2C/Trinity.txt.bak HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /nmaplowercheck1665924938 HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /server-status HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /CSS/Miniweb.css HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /main.jsa HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /.git/HEAD HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "POST /scripts/WPnBr.dll HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /pools/default/buckets HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /HNAP1 HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /base.php HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /uhH7 HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "POST /sdk HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /?=PHPE9568F36-D428-11d2-A769-00AA001ACF42 HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /pools HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /home.cgi HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /Portal/Portal.mwsl HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "HEAD / HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000 HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /index.cgi HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /docs/cplugError.html/ HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /start.cgi HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /__Additional HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /inicio.jhtml HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /indice.shtml HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET /menu.php HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     172.104.137.47:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.197.64:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     62.224.87.243:52238 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+WARNING:  Unsupported upgrade request.
+WARNING:  Invalid HTTP request received.
+INFO:     90.151.171.106:24468 - "GET /ip?Z78655600111Q1 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     192.241.214.25:0 - "GET /actuator/health HTTP/1.1" 404 Not Found
+INFO:     45.95.147.2:0 - "GET /Electron/download/windows/%5CWindows%5Cwin.ini HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     181.214.206.161:0 - "HEAD / HTTP/1.1" 404 Not Found
+INFO:     181.214.206.161:0 - "OPTIONS / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Unsupported upgrade request.
+WARNING:  Invalid HTTP request received.
+INFO:     192.241.217.209:0 - "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.1" 404 Not Found
+INFO:     192.241.219.120:0 - "GET /owa/auth/x.js HTTP/1.1" 404 Not Found
+INFO:     192.241.217.209:0 - "GET /owa/auth/logon.aspx HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     103.203.57.5:44184 - "GET /echo.php?info=20221016210115 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     103.203.57.5:45230 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Unsupported upgrade request.
+INFO:     152.89.196.211:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 404 Not Found
+INFO:     167.99.255.250:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     167.99.255.250:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     167.99.255.250:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /actuator/gateway/routes HTTP/1.1" 404 Not Found
+INFO:     185.100.87.136:0 - "GET / HTTP/1.1" 404 Not Found
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 459ms/step
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 24ms/step
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 24ms/step
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 31ms/step
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 27ms/step
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 21ms/step
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 28ms/step
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 24ms/step
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 29ms/step
+INFO:     206.87.4.171:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     20.109.3.204:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+INFO:     142.231.77.44:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     167.248.133.117:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.248.133.117:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     87.236.176.24:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.23:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Unsupported upgrade request.
+INFO:     35.82.16.193:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     34.78.6.216:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.220:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.220:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     217.131.96.225:9377 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+INFO:     217.131.96.225:9377 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     217.131.96.225:9795 - "GET /getHappiness HTTP/1.1" 405 Method Not Allowed
+WARNING:  Unsupported upgrade request.
+WARNING:  Invalid HTTP request received.
+INFO:     63.251.232.75:0 - "GET /Electron/download/windows/%5CProgram%20Files%5C3CX%20Phone%20System%5CData%5CDB%5Cbase%5C16384%5C16393 HTTP/1.1" 404 Not Found
+INFO:     35.199.65.102:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     87.236.176.173:44931 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Unsupported upgrade request.
+INFO:     74.82.47.14:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     34.65.230.162:0 - "OPTIONS / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 404 Not Found
+INFO:     23.251.102.82:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.23.212.173:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     198.23.212.173:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     206.87.4.104:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.4.104:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /actuator/gateway/routes HTTP/1.1" 404 Not Found
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 185ms/step
+INFO:     142.231.64.91:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 27ms/step
+INFO:     142.231.64.91:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 27ms/step
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 23ms/step
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 20ms/step
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     206.87.4.105:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.4.105:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     206.87.4.105:0 - "GET /heartbeat_detection HTTP/1.1" 404 Not Found
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15735]
+2022-10-17 17:23:36.672139: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-17 17:23:37.202980: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-17 17:23:37.203112: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-17 17:23:37.330532: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-17 17:23:38.802249: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-17 17:23:38.802583: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-17 17:23:38.802624: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-17 17:23:40.850008: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-17 17:23:40.850214: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-17 17:23:40.850360: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-17 17:23:40.851047: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [47711]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     206.87.4.104:0 - "GET /heartBeat HTTP/1.1" 200 OK
+INFO:     206.87.4.105:0 - "GET /heartbeat HTTP/1.1" 404 Not Found
+INFO:     206.87.4.105:0 - "GET /heartbet HTTP/1.1" 404 Not Found
+INFO:     142.231.79.44:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     142.231.79.44:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     206.87.4.105:0 - "GET /heartbeat HTTP/1.1" 404 Not Found
+INFO:     142.231.64.91:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+INFO:     206.87.4.105:0 - "GET /heartbeat HTTP/1.1" 404 Not Found
+INFO:     206.87.4.105:0 - "GET /heartbeat HTTP/1.1" 404 Not Found
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 422 Unprocessable Entity
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 424ms/step
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 35ms/step
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 42ms/step
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 35ms/step
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
+node:internal/errors:464
+    ErrorCaptureStackTrace(err);
+    ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'axios' imported from /home/wg25r/Project_310/Back_End/index.js
+    at new NodeError (node:internal/errors:371:5)
+    at packageResolve (node:internal/modules/esm/resolve:930:9)
+    at moduleResolve (node:internal/modules/esm/resolve:976:18)
+    at defaultResolve (node:internal/modules/esm/resolve:1078:11)
+    at ESMLoader.resolve (node:internal/modules/esm/loader:530:30)
+    at ESMLoader.getModuleJob (node:internal/modules/esm/loader:251:18)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:79:40)
+    at link (node:internal/modules/esm/module_job:78:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+INFO:     66.42.65.160:0 - "GET /heartbeat HTTP/1.1" 404 Not Found
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 73ms/step
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 22ms/step
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 29ms/step
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 28ms/step
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 22ms/step
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     66.42.65.160:0 - "GET /heartbeat HTTP/1.1" 404 Not Found
+INFO:     66.42.65.160:0 - "GET /heartbeat HTTP/1.1" 404 Not Found
+INFO:     66.42.65.160:0 - "GET /heartBeat HTTP/1.1" 200 OK
