@@ -41,7 +41,11 @@ async def create_file(file: UploadFile):
     #https://github.com/tiangolo/fastapi/discussions/4308
     #https://tinkalshakya283125.medium.com/face-detection-from-live-video-crop-the-face-and-send-it-via-email-using-opencv-and-smtplib-b2c32c182651
     request_object_content = await file.read()
-    img = np.array(Image.open(io.BytesIO(request_object_content)).convert('L'))
+    img = Image.open(io.BytesIO(request_object_content)).convert('L')
+    degs = {1: 0, 3: 180, 5: 90, 7:270}
+    deg = degs[img.getexif()[274]]
+    img = img.rotate(deg)
+    img = np.array(img)
     cv2.imwrite("/home/wg25r/tmp_raw_"+str(random.random())+".png",img)
     face  = crop_model.detectMultiScale(img)
     if len(face)==0:
