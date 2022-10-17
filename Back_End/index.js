@@ -1,6 +1,6 @@
 import axios from 'axios';
 import {exec} from 'child_process';
-const path = "/workspace/Project_310/Back_End/run.sh";
+const path = "~/Project_310/Back_End/run.sh";
 
 await axios.get('api.weasoft.com/heartbeat')
   .then(function (response) {
