@@ -5,34 +5,37 @@ import { pin, wifi, wine, warning, walk, thumbsUpOutline, chatboxEllipsesOutline
 import { faker } from '@faker-js/faker';
 interface ContainerProps { }
 
-const Card: React.FC<ContainerProps> = () => {
+const Card: React.FC<ContainerProps> = (user, post) => {
+    // use props.user.avatar, props.post.image, etc.
+
+
     return (
         <IonCard>
             <IonCardContent>
                 <IonItem class="no_border">
                     <IonAvatar slot="start">
-                        <img id="avatar" src={faker.image.avatar()}></img>
+                        <img id="avatar" src={props.user.avatar}></img>
                     </IonAvatar>
                     <IonLabel>
-                        <IonCardSubtitle>{faker.name.firstName().slice(0, 5)}_{faker.name.lastName().slice(0, 5)}{Math.round(Math.random() * 100)}</IonCardSubtitle>
-                        <p>6 Days Ago</p>
+                        <IonCardSubtitle>{props.user.firstName}_{props.user.lastName}{Math.round(Math.random() * 100)}</IonCardSubtitle>
+                        <p>{props.post.postDate}</p>
                     </IonLabel>
                     {/* <div className="chip">
                         <div className='filledChip'> */}
                     <div className="chip" style={{backgroundImage:"url('/assets/a.jpg')", backgroundSize:"100% 100%"}}>
-                        <IonLabel color="primary" style={{ fontSize: "small" }}><b>50% Happy</b></IonLabel>
+                        <IonLabel color="primary" style={{ fontSize: "small" }}><b>{props.post.emotion + "% Happy"}</b></IonLabel>
                     </div>
                     {/* </div>
                     </div> */}
                 </IonItem>
 
-                <img src={faker.image.abstract(1024, 1024, true)} />
+                <img src={props.post.image.abstract(1024, 1024, true)} />
                 {/* <div style={{backgroundColor:"red"}}>................</div> */}
                 <div>
                     {/* <img id="avatar" src={faker.image.avatar()}/> */}
                 </div>
                 <br />
-                {faker.lorem.lines(3)}.
+                {props.post.description}.
                 <br />
                 <br />
                 {/* <div className='likeContainer'><div className="Like"><IonIcon icon={thumbsUpOutline}></IonIcon>{Math.round(Math.random() * 100)}</div></div>
