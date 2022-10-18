@@ -976,3 +976,768 @@ INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
 INFO:     66.42.65.160:0 - "GET /heartbeat HTTP/1.1" 404 Not Found
 INFO:     66.42.65.160:0 - "GET /heartbeat HTTP/1.1" 404 Not Found
 INFO:     66.42.65.160:0 - "GET /heartBeat HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [47711]
+2022-10-17 18:08:17.879168: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-17 18:08:18.387210: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-17 18:08:18.387566: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-17 18:08:18.464604: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-17 18:08:19.840508: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-17 18:08:19.840840: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-17 18:08:19.840880: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-17 18:08:21.924975: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-17 18:08:21.925259: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-17 18:08:21.925325: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-17 18:08:21.925939: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [55951]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 46, in create_file
+    deg = degs[img.getexif()[274]]
+KeyError: 6
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 46, in create_file
+    deg = degs[img.getexif()[274]]
+KeyError: 6
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 46, in create_file
+    deg = degs[img.getexif()[274]]
+KeyError: 6
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 46, in create_file
+    deg = degs[img.getexif()[274]]
+KeyError: 6
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 46, in create_file
+    deg = degs[img.getexif()[274]]
+KeyError: 6
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 46, in create_file
+    deg = degs[img.getexif()[274]]
+KeyError: 6
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 46, in create_file
+    deg = degs[img.getexif()[274]]
+KeyError: 6
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 46, in create_file
+    deg = degs[img.getexif()[274]]
+KeyError: 6
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 46, in create_file
+    deg = degs[img.getexif()[274]]
+KeyError: 6
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 46, in create_file
+    deg = degs[img.getexif()[274]]
+KeyError: 6
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 46, in create_file
+    deg = degs[img.getexif()[274]]
+KeyError: 6
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 46, in create_file
+    deg = degs[img.getexif()[274]]
+KeyError: 6
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 46, in create_file
+    deg = degs[img.getexif()[274]]
+KeyError: 6
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [55951]
+2022-10-17 18:12:00.684317: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-17 18:12:01.158881: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-17 18:12:01.159160: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-17 18:12:01.195680: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-17 18:12:02.158064: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-17 18:12:02.158324: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-17 18:12:02.158378: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-17 18:12:03.447034: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-17 18:12:03.447272: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-17 18:12:03.447378: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-17 18:12:03.448083: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [56676]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 596ms/step
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 34ms/step
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 41ms/step
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [56676]
+2022-10-17 18:17:31.598241: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-17 18:17:32.173967: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-17 18:17:32.174224: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-17 18:17:32.260760: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-17 18:17:33.810240: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-17 18:17:33.810612: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-17 18:17:33.810662: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-17 18:17:35.817547: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-17 18:17:35.818171: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-17 18:17:35.818383: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-17 18:17:35.819380: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [57700]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 391ms/step
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 200 OK
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 30ms/step
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 200 OK
+No rotation!
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 200 OK
+No rotation!
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [57700]
+2022-10-17 18:20:12.623702: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-17 18:20:13.168701: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-17 18:20:13.168924: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-17 18:20:13.244335: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-17 18:20:14.677814: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-17 18:20:14.678271: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-17 18:20:14.678320: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-17 18:20:16.764591: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-17 18:20:16.765147: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-17 18:20:16.765295: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-17 18:20:16.766193: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [58207]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+No rotation!
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 200 OK
+Rotation 0
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 230ms/step
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [58207]
+2022-10-17 18:22:36.043864: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-17 18:22:36.284234: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-10-17 18:22:36.284366: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-17 18:22:36.321729: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-17 18:22:37.186193: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-17 18:22:37.186487: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-17 18:22:37.186555: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-17 18:22:38.423915: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-17 18:22:38.424137: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-17 18:22:38.424223: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-17 18:22:38.425044: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [58659]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 255ms/step
+INFO:     206.12.14.61:0 - "POST /getHappiness HTTP/1.1" 200 OK
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 41ms/step
+INFO:     206.87.4.104:0 - "POST /getHappiness HTTP/1.1" 200 OK
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 25ms/step
+INFO:     206.87.4.104:0 - "POST /getHappiness HTTP/1.1" 200 OK
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 24ms/step
+INFO:     206.87.4.104:0 - "POST /getHappiness HTTP/1.1" 200 OK
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 27ms/step
+INFO:     206.87.4.104:0 - "POST /getHappiness HTTP/1.1" 200 OK
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 41ms/step
+INFO:     206.87.4.104:0 - "POST /getHappiness HTTP/1.1" 200 OK
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 20ms/step
+INFO:     206.87.4.104:0 - "POST /getHappiness HTTP/1.1" 200 OK
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 25ms/step
+INFO:     206.87.4.104:0 - "POST /getHappiness HTTP/1.1" 200 OK
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 24ms/step
+INFO:     206.87.4.104:0 - "POST /getHappiness HTTP/1.1" 200 OK
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 24ms/step
+INFO:     206.87.4.104:0 - "POST /getHappiness HTTP/1.1" 200 OK
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 25ms/step
+INFO:     206.87.4.104:0 - "POST /getHappiness HTTP/1.1" 200 OK
+Rotation 0
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 41ms/step
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
+Rotation 0
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 34ms/step
+INFO:     206.12.14.52:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     152.89.196.23:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+INFO:     209.222.252.91:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     183.136.225.35:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     183.136.225.35:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     183.136.225.35:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     183.136.225.35:0 - "GET /robots.txt HTTP/1.1" 404 Not Found
+Rotation 0
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 31ms/step
+INFO:     142.231.84.150:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     167.71.59.167:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     167.71.59.167:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     167.71.59.167:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     143.244.149.189:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     143.244.149.189:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     143.244.149.189:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     20.25.161.86:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     20.25.161.86:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     192.241.202.173:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     185.7.214.218:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+INFO:     88.214.43.215:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     138.197.15.128:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     138.197.15.128:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     138.197.15.128:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     20.90.28.223:53756 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.221.72:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     165.22.242.120:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     165.22.242.120:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     165.22.242.120:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     185.180.143.7:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     128.14.133.58:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     205.210.31.11:0 - "GET / HTTP/1.1" 404 Not Found
+Rotation 0
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 32ms/step
+INFO:     206.87.0.141:0 - "POST /getHappiness HTTP/1.1" 200 OK
+Rotation 0
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 29ms/step
+INFO:     206.87.0.141:0 - "POST /getHappiness HTTP/1.1" 200 OK
+INFO:     152.89.196.211:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 404 Not Found
+INFO:     192.241.212.172:0 - "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.1" 404 Not Found
+INFO:     192.241.205.22:0 - "GET /owa/auth/x.js HTTP/1.1" 404 Not Found
+INFO:     192.241.219.120:0 - "GET /owa/auth/logon.aspx HTTP/1.1" 404 Not Found
+INFO:     206.189.22.98:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     206.189.22.98:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.221.192.90:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.145.60:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.145.60:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /actuator/gateway/routes HTTP/1.1" 404 Not Found
+INFO:     92.204.146.5:0 - "GET /86ad51912cd50365a9edf05ddaee1fd2/css/legacy-main.css HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     193.118.53.194:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     128.1.248.42:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.197.95:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     5.188.210.227:64833 - "GET /echo.php HTTP/1.1" 404 Not Found
+INFO:     152.89.196.23:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+INFO:     34.77.127.183:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     185.180.143.5:0 - "GET /owa/ HTTP/1.1" 404 Not Found
+INFO:     185.7.214.218:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     138.197.13.130:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     138.197.13.130:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     138.197.13.130:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     128.14.134.134:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     36.156.28.132:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     36.156.28.132:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     36.156.28.132:0 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     36.156.28.132:0 - "GET /.well-known/security.txt HTTP/1.1" 404 Not Found
+INFO:     128.14.209.162:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+No rotation!
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 143ms/step
+INFO:     206.87.4.187:0 - "POST /getHappiness HTTP/1.1" 200 OK

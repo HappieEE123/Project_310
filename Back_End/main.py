@@ -43,20 +43,27 @@ async def create_file(file: UploadFile):
     request_object_content = await file.read()
     img = Image.open(io.BytesIO(request_object_content)).convert('L')
     degs = {1: 0, 3: 180, 5: 90, 7:270}
-    deg = degs[img.getexif()[274]]
-    img = img.rotate(deg)
+    try:
+        deg = degs[img.getexif()[274]]
+        img = img.rotate(deg)
+        print("Rotation",deg)
+    except:
+        print("No rotation!")
     img = np.array(img)
     cv2.imwrite("/home/wg25r/tmp_raw_"+str(random.random())+".png",img)
-    face  = crop_model.detectMultiScale(img)
-    if len(face)==0:
-        return {"score":-1,"message": "Cannot find face(s)"}
-    else:
-        face = face[0]
-    x1 = face[0]
-    y1 = face[1]
-    x2 = face[2] + x1
-    y2 = face[3] + y1 
-    crop_img = img[y1:y2 , x1:x2]     
+    try:
+        face  = crop_model.detectMultiScale(img)
+        if len(face)==0:
+            pass #return {"score":-1,"message": "Cannot find face(s)"}
+        else:
+            face = face[0]
+        x1 = face[0]
+        y1 = face[1]
+        x2 = face[2] + x1
+        y2 = face[3] + y1 
+        crop_img = img[y1:y2 , x1:x2]     
+    except:
+        crop_img = img
     # resized_img = pylab.imshow(cv2.resize(crop_img,(48,48)))
     resized_img = cv2.resize(crop_img,(48,48))
     array = np.array(resized_img).reshape(1,48,48,1)
