@@ -15,7 +15,13 @@ app = FastAPI()
 
 import random
 from html import escape
-replacements = ["<",'>',"'",'"',""]
+replacements = {
+    "fuck","f**k",
+    "shit","s**t",
+    "dick","d**k",
+    "' and 1=1","Chill",
+    "happieeee","happieee",
+}
 def anitizor(str):
     return escape(str)
 
