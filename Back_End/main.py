@@ -1,16 +1,32 @@
 from typing import Union
 
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, Depends
 from fastapi.middleware.cors import CORSMiddleware
 import tensorflow as tf #forget
 import numpy as np
 from PIL import Image
+import models
+from db import engine, SessionLocal
+models.Base.metadata.create_all(bind=engine)
+import crud, models, schemas
+from sqlalchemy.orm import Session
+
+
 import io
 app = FastAPI()
 import cv2
 import random
 crop_model = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 model = tf.keras.models.load_model('COSC310.unziped.mod')
+
+# Dependency https://fastapi.tiangolo.com/tutorial/sql-databases/#__tabbed_2_3
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
 
 origins = [
     "*",#Because gitpod fowarding this has to be *
@@ -60,3 +76,8 @@ async def create_file(file: UploadFile):
     cv2.imwrite("/home/wg25r/tmp_"+str(random.random())+".png", resized_img)
     # cv2.imsave(resized_img, "tmp.png")
     return {"score":float(ans[0])}
+
+
+@app.post("/post/")
+def post(post: schemas.CreatPost, db: Session = Depends(get_db)):
+    crud.create_post(db=db, post=post)
