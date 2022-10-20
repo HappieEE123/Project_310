@@ -16,7 +16,6 @@ app = FastAPI()
 import random
 
 
-
 app.mount("/imgs", StaticFiles(directory="imgs"), name="imgs")
 
 # Dependency https://fastapi.tiangolo.com/tutorial/sql-databases/#__tabbed_2_3
@@ -64,3 +63,8 @@ async def post(file: UploadFile, db: Session = Depends(get_db), description: str
     with open("./imgs/%s" % db_post.id, "wb") as f:
         f.write(request_object_content)
     return db_post
+
+
+@app.get("/feed")
+def getFeed( db: Session = Depends(get_db)):
+    return db.query(models.Post).all()

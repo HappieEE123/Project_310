@@ -8862,3 +8862,2361 @@ INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     206.87.5.5:0 - "GET /docs HTTP/1.1" 200 OK
 INFO:     206.87.5.5:0 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [92809]
+2022-10-20 03:36:29.489094: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-20 03:36:29.978265: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:36:29.979533: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-20 03:36:30.072810: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+Process SpawnProcess-262:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib64/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/config.py", line 479, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib64/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 69
+    @app.get("/feed")
+SyntaxError: invalid syntax
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+Process SpawnProcess-263:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib64/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/config.py", line 479, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib64/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 70
+    def getFeed()
+                 ^
+SyntaxError: expected ':'
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+Process SpawnProcess-264:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib64/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/config.py", line 479, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib64/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 71
+    db.query(models.User).filter(models.User.id == user_id).first()
+    ^^
+IndentationError: expected an indented block after function definition on line 70
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+2022-10-20 03:36:41.696160: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-20 03:36:42.155301: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:36:42.156750: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-20 03:36:42.268425: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+2022-10-20 03:36:44.155006: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-20 03:36:44.544801: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:36:44.544939: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-20 03:36:44.617370: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+2022-10-20 03:36:46.477633: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-20 03:36:46.884680: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:36:46.884813: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-20 03:36:46.958554: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+2022-10-20 03:36:49.355684: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-20 03:36:49.710764: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:36:49.710904: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-20 03:36:49.776678: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-20 03:36:51.360852: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:36:51.361558: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:36:51.361644: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-20 03:36:52.616445: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:36:52.616630: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-20 03:36:52.616748: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-20 03:36:52.617184: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [93108]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     206.87.5.5:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /feed HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 71, in getFeed
+    return db.query(models.Post)
+NameError: name 'db' is not defined
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [93108]
+2022-10-20 03:37:17.116255: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+2022-10-20 03:37:18.515739: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-20 03:37:18.778822: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:37:18.779681: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-20 03:37:18.832977: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-20 03:37:19.660528: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:37:19.661760: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:37:19.662148: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-20 03:37:20.805078: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:37:20.805866: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-20 03:37:20.806306: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-20 03:37:20.807511: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [93278]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     206.87.5.5:0 - "GET /feed HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 249, in app
+    content = await serialize_response(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 149, in serialize_response
+    return jsonable_encoder(response_content)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 161, in jsonable_encoder
+    return jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/encoders.py", line 148, in jsonable_encoder
+    if isinstance(obj, classes_tuple):
+  File "/usr/lib64/python3.10/abc.py", line 119, in __instancecheck__
+    return _abc_instancecheck(cls, instance)
+RecursionError: maximum recursion depth exceeded in comparison
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [93278]
+2022-10-20 03:38:13.325209: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-20 03:38:13.777287: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:38:13.778080: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-20 03:38:13.867687: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-20 03:38:15.542798: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:38:15.544788: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:38:15.546596: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-20 03:38:18.175242: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:38:18.177228: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-20 03:38:18.178053: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-20 03:38:18.179012: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [93395]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     206.87.5.5:0 - "GET /feed HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [93395]
+2022-10-20 03:39:37.665189: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-20 03:39:38.199788: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:39:38.200946: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-20 03:39:38.307825: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-20 03:39:40.175468: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:39:40.176702: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:39:40.177075: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-20 03:39:42.652732: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:39:42.653738: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-20 03:39:42.657471: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-20 03:39:42.658278: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [93558]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     206.87.5.5:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "POST /post/ HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /feed HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [93558]
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+2022-10-20 03:41:32.570038: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-20 03:41:33.019575: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:41:33.020596: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-20 03:41:33.110736: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-20 03:41:34.869925: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:41:34.874204: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:41:34.874699: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-20 03:41:37.319394: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:41:37.320534: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-20 03:41:37.320957: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-20 03:41:37.321752: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [93744]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [93744]
+2022-10-20 03:42:07.676804: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+2022-10-20 03:42:08.512978: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-20 03:42:08.700235: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:42:08.701547: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-20 03:42:08.750300: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-20 03:42:09.602799: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:42:09.605054: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:42:09.605565: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-20 03:42:11.381444: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:42:11.382965: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-20 03:42:11.384205: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-20 03:42:11.385250: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Process SpawnProcess-276:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib64/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/config.py", line 479, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib64/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 18, in <module>
+    sanitizor
+NameError: name 'sanitizor' is not defined
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+Process SpawnProcess-277:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib64/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/config.py", line 479, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib64/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 18
+    def anitizor 
+                 ^
+SyntaxError: invalid syntax
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+2022-10-20 03:42:23.009528: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-20 03:42:23.276477: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:42:23.277241: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-20 03:42:23.326313: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-20 03:42:24.298498: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:42:24.298834: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-20 03:42:24.298894: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
