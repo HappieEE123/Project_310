@@ -14,7 +14,10 @@ import ML
 app = FastAPI()
 
 import random
-
+from html import escape
+replacements = ["<",'>',"'",'"',""]
+def anitizor(str):
+    return escape(str)
 
 app.mount("/imgs", StaticFiles(directory="imgs"), name="imgs")
 
@@ -56,7 +59,7 @@ async def post(file: UploadFile, db: Session = Depends(get_db), description: str
     request_object_content = await file.read()
     res = ML.getScore(request_object_content)
 
-    db_post = models.Post(user_id = 1, description=description, happiness=[int(res*100) if res!=-1 else random.randint(10,100)], commentCounts=0, likesCount=0)
+    db_post = models.Post(user_id = 1, description=anitizor(description), happiness=[int(res*100) if res!=-1 else random.randint(10,100)], commentCounts=0, likesCount=0)
     db.add(db_post)
     db.commit()
     db.refresh(db_post)
