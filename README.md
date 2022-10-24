@@ -31,8 +31,8 @@ It's main features are:
 
 ### Tech Stack
 - Front End: Ionic + React 
-- Backend: Python Fast API, Node.js for crash detector
-- Database: SQLite/MySQL
+- Backend: Python Fast API, Node.js for crash detector, bash for logging
+- Database: MySQL
 
 
 
