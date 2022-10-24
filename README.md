@@ -25,7 +25,8 @@ It's main features are:
 
 
 ### Class Organization
-
+- Using MySQL the data is seperated into a class for each table which contain's users data as objects
+-
 
 ### Tech Stack
 - Front End: Ionic + React 
