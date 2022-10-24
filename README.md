@@ -8,7 +8,7 @@ cos(x) & 3\sqrt{e} & x^6x\\
 \end{bmatrix}\cdot \vec p }{x^t\cdot \frac{d}{dt}(5^t)\cdot(\int^{8x}_{90x+90x^2}(t^e)dt)}
 $$
 
-### //What is the project about? ###
+## //What is the project about? ###
 The purpose of our app, “happieEE”, is to determine if someone is happy or not.happieEE is a social media platform 
 that has a feed and can detect the emotions in a user’s posts.
 
@@ -21,17 +21,37 @@ It's main features are:
   * -Feed (You can post results and share to everyone)
 
 
-### //How to compile and run the code?
+## How to compile and run the code?
+### Back End
+```bash
+cd Back_End
+nohup bash run.sh &
+nohup node index.js > status.log &
+```
 
+### Front End
+Run:
+```bash
+npm install -g @ionic/cli
+cd FrontEnd
+ionic serve
+```
 
-### Class Organization
+Compile to Production 
+```bash
+npm install -g @ionic/cli
+cd FrontEnd
+ionic build
+gh-pages -d build
+```
+## Class Organization
 - Using MySQL the data is seperated into a class for each table which contain's users data as objects
   this is located in the Backend folder in the file models.py
 - Using Fast api the api functions for the application are located in the main.py file of the backend folder
 - Using a Ionic + React framework the frontend code for the home feed is located in /Front_End/src/pages/Home.tsx
 
 
-### Tech Stack
+## Tech Stack
 - Front End: Ionic + React 
 - Backend: Python Fast API, Node.js for crash detector, bash for logging
 - Database: MySQL
