@@ -24,7 +24,6 @@ export default function Home() {
       </IonHeader>
       <IonContent>
         
-                    {//code here;}
 
       </IonContent >
     </IonPage >
