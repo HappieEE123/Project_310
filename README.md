@@ -26,6 +26,7 @@ It's main features are:
 
 ### Class Organization
 - Using MySQL the data is seperated into a class for each table which contain's users data as objects
+  this is located in the Backend folder in the file models.py
 -
 
 ### Tech Stack
