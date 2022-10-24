@@ -25,24 +25,24 @@ It's main features are:
 ### Back End
 ```bash
 cd Back_End
-nohup bash run.sh &
-nohup node index.js > status.log &
+nohup bash run.sh & # Run the main program
+nohup node index.js > status.log & # 
 ```
 
 ### Front End
 Run:
 ```bash
 npm install -g @ionic/cli
-cd FrontEnd
+cd Front_End
 ionic serve
 ```
 
 Compile to Production 
 ```bash
 npm install -g @ionic/cli
-cd FrontEnd
-ionic build
-gh-pages -d build
+cd Front_End
+ionic build # Compile
+gh-pages -d build  # Deploy to GitHub Pages
 ```
 ## Class Organization
 - Using MySQL the data is seperated into a class for each table which contain's users data as objects
