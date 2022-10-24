@@ -26,7 +26,7 @@ It's main features are:
 ```bash
 cd Back_End
 nohup bash run.sh & # Run the main program
-nohup node index.js > status.log & # 
+nohup node index.js > status.log & # Run the crash detector
 ```
 
 ### Front End
