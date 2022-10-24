@@ -23,7 +23,7 @@ export default function Home() {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        
+
 
       </IonContent >
     </IonPage >
