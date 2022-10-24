@@ -23,8 +23,6 @@ export default function Home() {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        
-                    {//code here;}
 
       </IonContent >
     </IonPage >
