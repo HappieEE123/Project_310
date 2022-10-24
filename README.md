@@ -27,7 +27,9 @@ It's main features are:
 ### Class Organization
 - Using MySQL the data is seperated into a class for each table which contain's users data as objects
   this is located in the Backend folder in the file models.py
--
+- Using Fast api the api for the application are located in the main.py file of the backend folder
+- 
+
 
 ### Tech Stack
 - Front End: Ionic + React 
