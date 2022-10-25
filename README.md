@@ -69,8 +69,7 @@ Themes:
  - To prevent redundant code, we have a class where we have all our themes (i.e. colours) that we can easily access from other classes
 
 ### Backend
-the documentation for the backend is located in the 
-
+the documentation for the backend is located in HappieEE123/Project_310/FastAPI-docmentation UI.html
 
 
 ## Tech Stack
