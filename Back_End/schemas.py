@@ -3,7 +3,7 @@
 # class PostBase(BaseModel):
 #     description: str
 
-
+"""
 class Post(PostBase):
      user_id: int
      id: int
@@ -13,4 +13,4 @@ class Post(PostBase):
 
 
 class CreatPost(PostBase):
-     pass
+     pass"""
