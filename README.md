@@ -30,6 +30,23 @@ nohup node index.js > status.log & # Run the crash detector
 ```
 
 ### Front End
+Components:
+ - Card
+  - Each post on the global feed is a Card and this component allows us to easily add new posts  
+ - ExploreContainer
+  - This is where we prepare data to be shown in the Card component. We fetch data from our API on this component and pass it onto the Card component
+ - Popup
+  - This component sends a popup to the user showing information passed into the component
+
+Pages:
+ - Home
+  - The Home page is the landing page that the users will first see when they go on the app. This is also where the global feed is to see user posts
+ - Login
+  - This is the login page where users can login or sign up a new account
+
+Themes:
+ - To prevent redundant code, we have a class where we have all our themes (i.e. colours) that we can easily access from other classes
+
 Run:
 ```bash
 npm install -g @ionic/cli
