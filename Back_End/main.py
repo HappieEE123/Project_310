@@ -56,7 +56,7 @@ def heartbeat():
 @app.post("/getHappiness")
 async def create_file(file: UploadFile):
     request_object_content = await file.read()
-    return {"score":ML.getScore(request_object_content)}
+    return {"score":int(ML.getScore(request_object_content))}
 
 
 @app.post("/post/")
@@ -71,7 +71,7 @@ async def post(file: UploadFile, db: Session = Depends(get_db), description: str
     db.refresh(db_post)
     with open("./imgs/%s" % db_post.id, "wb") as f:
         f.write(request_object_content)
-    return db_post
+    return {"score":db_post["happiness"]}
 
 
 @app.get("/feed")
