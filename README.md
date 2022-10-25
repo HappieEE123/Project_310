@@ -42,7 +42,7 @@ Pages:
  - Home
   - The Home page is the landing page that the users will first see when they go on the app. This is also where the global feed is to see user posts
  - Login
-  - This is the login page where users can login or sign up a new account
+  - This is the login page where users can login or sign up a new account, with a forgot password option. 
 
 Themes:
  - To prevent redundant code, we have a class where we have all our themes (i.e. colours) that we can easily access from other classes
@@ -65,13 +65,13 @@ gh-pages -d build  # Deploy to GitHub Pages
 - Using MySQL the data is seperated into a class for each table which contain's users data as objects
   this is located in the Backend folder in the file models.py
 - Using Fast api the api functions for the application are located in the main.py file of the backend folder
-- Using a Ionic + React framework the frontend code for the home feed is located in /Front_End/src/pages/Home.tsx
+- Using a Ionic + React framework the frontend code for the home feed is located in /Front_End/src/pages/Home.tsx.
 
 
 ## Tech Stack
 - Front End: Ionic + React 
-- Backend: Python Fast API, Node.js for crash detector, bash for logging
-- Database: MySQL
+- Backend: Python Fast API, Node.js for crash detector, bash for logging.
+- Database: MySQL.
 
 
 
