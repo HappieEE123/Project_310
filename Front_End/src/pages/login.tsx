@@ -1,4 +1,4 @@
-import { IonContent, IonModal, IonButtons, useIonActionSheet, IonProgressBar, IonButton, IonItem, IonInput, IonList, IonBackButton, IonTextarea, IonFab, IonFabButton, IonIcon, IonHeader, IonPage, IonTitle, IonToolbar, setupIonicReact } from '@ionic/react';
+import { IonContent, IonRow, IonCol, IonLabel, IonModal, IonButtons, useIonActionSheet, IonProgressBar, IonButton, IonItem, IonInput, IonList, IonBackButton, IonTextarea, IonFab, IonFabButton, IonIcon, IonHeader, IonPage, IonTitle, IonToolbar, setupIonicReact } from '@ionic/react';
 import { camera, addOutline, paperPlaneOutline } from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
