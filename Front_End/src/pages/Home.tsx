@@ -75,8 +75,9 @@ export default function Home() {
     //https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects
 
     formData.append("file", file);
+    formData.append("description",(document.getElementById("description") as HTMLInputElement).value);
     const request = new XMLHttpRequest();
-    request.open("POST", "https://api.weasoft.com/getHappiness");
+    request.open("POST", "https://api.weasoft.com/post/");
 
     request.addEventListener("readystatechange", () => {
       console.log(request.readyState);
