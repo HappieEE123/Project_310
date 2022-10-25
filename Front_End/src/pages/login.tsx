@@ -41,7 +41,7 @@ export default function Home() {
            <IonLabel position="floating"> Email</IonLabel>
            <IonInput
              type="email"
-             value={email}
+             value={0}
             onIonChange={(e) => setEmail(e.detail.value!)}
          >
            </IonInput>
