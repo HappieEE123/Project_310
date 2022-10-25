@@ -23,7 +23,46 @@ export default function Home() {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-
+          
+      //render icon
+      <IonRow>
+        <IonCol>
+          <IonIcon
+          style={{ fontSize: "70px", color: "#0040ff" }}
+          icon={personCircle}
+        />
+        </IonCol>
+      </IonRow>
+        
+        //email component
+      <IonRow>
+        <IonCol>
+          <IonItem>
+           <IonLabel position="floating"> Email</IonLabel>
+           <IonInput
+             type="email"
+             value={email}
+            onIonChange={(e) => setEmail(e.detail.value!)}
+         >
+           </IonInput>
+          </IonItem>
+        </IonCol>
+      </IonRow>
+        
+        //helper text and login button 
+      <IonRow>
+        <IonCol>
+          <p style={{ fontSize: "small" }}>
+            By clicking LOGIN you agree to our <a href="#">Policy</a
+         </p>
+          <IonButton expand="block" onClick={handleLogin}>
+            Login
+          </IonButton>
+          <p style={{ fontSize: "medium" }}>
+           Don't have an account? <a href="#">Sign up!</a>
+          </p>
+        </IonCol>
+      </IonRow>
 
       </IonContent >
     </IonPage >
