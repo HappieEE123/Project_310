@@ -8,7 +8,8 @@ import models
 from db import engine, SessionLocal
 models.Base.metadata.create_all(bind=engine)
 import crud, models, schemas
-from sqlalchemy.orm import Session, desc
+from sqlalchemy.orm import Session
+from sqlalchemy import desc
 import ML
 
 app = FastAPI()
@@ -71,7 +72,8 @@ async def post(file: UploadFile, db: Session = Depends(get_db), description: str
     db.refresh(db_post)
     with open("./imgs/%s" % db_post.id, "wb") as f:
         f.write(request_object_content)
-    return {"score":db_post["happiness"]}
+    return {"score":db_post.happinessi/100}#["happiness"]}
+
 
 
 @app.get("/feed")
