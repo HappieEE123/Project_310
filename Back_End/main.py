@@ -72,11 +72,11 @@ async def post(file: UploadFile, db: Session = Depends(get_db), description: str
     db.refresh(db_post)
     with open("./imgs/%s" % db_post.id, "wb") as f:
         f.write(request_object_content)
-    return {"score":db_post.happinessi/100}#["happiness"]}
+    return {"score":db_post.happiness/100}#["happiness"]}
 
 
 
 @app.get("/feed")
 def getFeed( db: Session = Depends(get_db)):
-    return (db.query(models.Post).all()).order_by(Post.id.desc())
+    return (db.query(models.Post).order_by(models.Post.id.desc()).all())
 
