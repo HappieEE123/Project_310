@@ -81,6 +81,6 @@ the documentation for the backend is located in HappieEE123/Project_310/FastAPI-
 
 
 ## a list of each feature you programmed for this assignment
-### for each item on that list, explain briefly how you used that feature to improve your
+- for each item on that list, explain briefly how you used that feature to improve your
 system
-### for each explanation, give a snippet of the output that demonstrates your feature
+- for each explanation, give a snippet of the output that demonstrates your feature
