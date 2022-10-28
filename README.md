@@ -8,6 +8,8 @@ cos(x) & 3\sqrt{e} & x^6x\\
 \end{bmatrix}\cdot \vec p }{x^t\cdot \frac{d}{dt}(5^t)\cdot(\int^{8x}_{90x+90x^2}(t^e)dt)}
 $$
 
+## What has Changed since project 2
+
 ## //What is the project about? ###
 The purpose of our app, “happieEE”, is to determine if someone is happy or not.happieEE is a social media platform 
 that has a feed and can detect the emotions in a user’s posts.
