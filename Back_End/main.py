@@ -8,7 +8,7 @@ import models
 from db import engine, SessionLocal
 models.Base.metadata.create_all(bind=engine)
 import crud, models, schemas
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, desc
 import ML
 
 app = FastAPI()
@@ -76,4 +76,5 @@ async def post(file: UploadFile, db: Session = Depends(get_db), description: str
 
 @app.get("/feed")
 def getFeed( db: Session = Depends(get_db)):
-    return db.query(models.Post).all()
+    return (db.query(models.Post).all()).order_by(Post.id.desc())
+
