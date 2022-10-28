@@ -23,7 +23,7 @@ replacements = {
     "happieeee","happieee",
 }
 def anitizor(str):
-    return escape(str)
+    return str
 
 app.mount("/imgs", StaticFiles(directory="imgs"), name="imgs")
 
