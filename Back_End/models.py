@@ -1,4 +1,4 @@
-from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
+from sqlalchemy import Boolean, Column, ForeignKey, Integer, String, BigIntegers
 from sqlalchemy.orm import relationship
 
 from db import Base
@@ -14,6 +14,7 @@ class Post(Base):
     __tablename__ = "posts"
 
     id = Column(Integer, primary_key=True, index=True)
+    date = Column(BigIntegers)
     user_id = Column(Integer, ForeignKey("users.id"))
     description = Column(String(300))
     happiness = Column(Integer)
