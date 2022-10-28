@@ -71,7 +71,7 @@ async def post(file: UploadFile, db: Session = Depends(get_db), description: str
     db.refresh(db_post)
     with open("./imgs/%s" % db_post.id, "wb") as f:
         f.write(request_object_content)
-    return {"score":db_post["happiness"]}
+    return {"score":db_post.happiness/100}  
 
 
 @app.get("/feed")
