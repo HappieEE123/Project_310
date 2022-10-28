@@ -15182,3 +15182,1066 @@ INFO:     Shutting down
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
 INFO:     Finished server process [38670]
+2022-10-25 05:20:58.373315: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-25 05:20:58.894651: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-25 05:20:58.894801: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-25 05:20:58.969368: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-25 05:21:00.259783: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-25 05:21:00.260925: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-25 05:21:00.261100: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-25 05:21:02.084980: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-25 05:21:02.085110: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-25 05:21:02.085169: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-25 05:21:02.085907: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [39493]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 248ms/step
+INFO:     142.231.78.115:0 - "POST /post/ HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 74, in post
+    return {"score":db_post["happiness"]}
+TypeError: 'Post' object is not subscriptable
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [39493]
+2022-10-25 05:22:03.790813: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-25 05:22:04.114724: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-25 05:22:04.114884: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-25 05:22:04.157406: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-25 05:22:05.172266: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-25 05:22:05.172513: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-25 05:22:05.172545: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-25 05:22:06.652395: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-25 05:22:06.652548: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-25 05:22:06.652621: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-25 05:22:06.653174: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [39603]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 210ms/step
+INFO:     142.231.78.115:0 - "POST /post/ HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 36ms/step
+INFO:     142.231.78.115:0 - "POST /post/ HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /19 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /20 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /22 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /21 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /28 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /29 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /30 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /31 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /21 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /22 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /28 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /29 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /30 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /31 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /16 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /17 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /18 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /19 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /21 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /22 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     206.12.14.165:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [39603]
+2022-10-25 05:31:28.380483: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-25 05:31:28.780460: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-25 05:31:28.780593: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-25 05:31:28.814198: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-25 05:31:29.628489: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-25 05:31:29.628766: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-25 05:31:29.628806: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-25 05:31:30.744857: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-25 05:31:30.745012: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-25 05:31:30.745075: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-25 05:31:30.745528: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [39663]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     142.231.78.115:0 - "POST /post/ HTTP/1.1" 422 Unprocessable Entity
+INFO:     142.231.78.115:0 - "POST /post/ HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "POST /post/ HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 262ms/step
+INFO:     142.231.78.115:0 - "POST /post/ HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 33ms/step
+INFO:     142.231.78.115:0 - "POST /post/ HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 26ms/step
+INFO:     142.231.78.115:0 - "POST /post/ HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /24 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /23 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /26 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /25 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /28 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /27 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /29 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /30 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /32 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /31 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /33 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /34 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /35 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /36 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /18 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /17 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /16 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /19 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /21 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /22 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /28 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /29 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /30 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /31 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /32 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /33 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /34 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /35 HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /36 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /16 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /18 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /17 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /19 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /21 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /22 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /28 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /29 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /30 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /31 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /32 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /33 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /34 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /35 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /36 HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     35.195.93.98:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     142.231.78.115:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /16 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /18 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /17 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /21 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /22 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /28 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /29 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /30 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /31 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /32 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /33 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /34 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /36 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /35 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /19 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /20 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /21 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /22 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /28 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /29 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /30 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /31 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /32 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /33 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /34 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /35 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /36 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /16 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /17 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /18 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.34.81:0 - "GET /21 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /22 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /23 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /25 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /20 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /24 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /26 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /27 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /28 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /29 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /31 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /30 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /32 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /34 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /35 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /33 HTTP/1.1" 304 Not Modified
+INFO:     142.231.34.81:0 - "GET /36 HTTP/1.1" 304 Not Modified
+INFO:     152.89.196.211:0 - "GET /actuator/gateway/routes HTTP/1.1" 404 Not Found
+INFO:     142.231.78.115:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /28 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /29 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /30 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /31 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /32 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /33 HTTP/1.1" 200 OK
+INFO:     142.231.78.115:0 - "GET /34 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /35 HTTP/1.1" 304 Not Modified
+INFO:     142.231.78.115:0 - "GET /36 HTTP/1.1" 304 Not Modified
+WARNING:  Invalid HTTP request received.
+INFO:     192.241.215.109:0 - "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.1" 404 Not Found
+INFO:     192.241.205.22:0 - "GET /owa/auth/x.js HTTP/1.1" 404 Not Found
+INFO:     192.241.219.20:0 - "GET /owa/auth/logon.aspx HTTP/1.1" 404 Not Found
+INFO:     66.240.236.116:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.206.204:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     178.62.246.84:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     178.62.246.84:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     178.62.246.84:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.23:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.145.59:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.145.59:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     172.105.208.132:40630 - "GET / HTTP/1.1" 404 Not Found
+INFO:     213.32.122.82:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     74.82.47.43:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     77.83.36.43:65378 - "GET / HTTP/1.1" 404 Not Found
+INFO:     77.83.36.43:64549 - "GET /HNAP1/ HTTP/1.1" 404 Not Found
+INFO:     23.251.102.74:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     43.134.234.251:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     94.102.61.8:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     176.58.124.134:0 - "GET /qCGCLyY HTTP/1.1" 404 Not Found
+INFO:     206.87.4.182:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     138.246.253.24:0 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     206.87.4.182:0 - "GET /feed HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 756, in _write_bytes
+    self._sock.sendall(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 547, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 814, in _execute_command
+    self._write_bytes(packet)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 759, in _write_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 79, in getFeed
+    return db.query(models.Post).all()
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2772, in all
+    return self._iter().all()
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2907, in _iter
+    result = self.session.execute(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1714, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 333, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1572, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1943, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2124, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 547, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 814, in _execute_command
+    self._write_bytes(packet)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 759, in _write_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+[SQL: SELECT posts.id AS posts_id, posts.user_id AS posts_user_id, posts.description AS posts_description, posts.happiness AS posts_happiness, posts.`likesCount` AS `posts_likesCount`, posts.`commentCounts` AS `posts_commentCounts` 
+FROM posts]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO:     206.87.4.182:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /16 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /17 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /18 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /19 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /21 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /22 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /28 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /29 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /30 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /31 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /32 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /33 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /34 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /35 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /36 HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     206.87.4.182:0 - "GET /37 HTTP/1.1" 404 Not Found
+INFO:     206.87.4.182:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     206.87.4.182:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     172.105.161.246:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Unsupported upgrade request.
+INFO:     172.104.233.239:0 - "GET /uNJO HTTP/1.1" 404 Not Found
+INFO:     172.104.233.239:0 - "GET /Cow4 HTTP/1.1" 404 Not Found
+INFO:     20.203.40.116:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     142.231.37.111:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /16 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /17 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /18 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /19 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /21 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /22 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /28 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /29 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /30 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /31 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /32 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /33 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /34 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /35 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /36 HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 134ms/step
+INFO:     142.231.37.111:0 - "POST /post/ HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /37 HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     175.100.20.194:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     128.14.134.170:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     194.180.48.125:0 - "GET /explore HTTP/1.1" 404 Not Found
+INFO:     45.83.66.2:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.83.65.66:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     142.231.37.111:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /12 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /13 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /14 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /17 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /15 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /16 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /18 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /20 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /23 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /22 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /19 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /21 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /24 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /25 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /26 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /27 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /28 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /29 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /30 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /32 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /31 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /34 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /33 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /35 HTTP/1.1" 304 Not Modified
+INFO:     142.231.37.111:0 - "GET /37 HTTP/1.1" 200 OK
+INFO:     142.231.37.111:0 - "GET /36 HTTP/1.1" 304 Not Modified
+INFO:     198.235.24.28:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.209.39:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 404 Not Found
+INFO:     162.142.125.8:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.8:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.23:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+INFO:     143.198.212.40:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     143.198.212.40:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     143.198.212.40:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     179.43.154.213:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /actuator/gateway/routes HTTP/1.1" 404 Not Found
+INFO:     192.241.220.94:0 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     164.92.153.156:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     164.92.153.156:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     164.92.153.156:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     34.77.127.183:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.146.58:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.146.58:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.221.192.26:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     192.241.220.218:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     109.248.6.108:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     184.105.247.208:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     87.236.176.199:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     87.236.176.117:40493 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.214.65:0 - "GET /actuator/health HTTP/1.1" 404 Not Found
+INFO:     20.168.98.150:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     20.168.98.150:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     192.241.219.128:0 - "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.1" 404 Not Found
+INFO:     192.241.205.22:0 - "GET /owa/auth/x.js HTTP/1.1" 404 Not Found
+INFO:     192.241.214.56:0 - "GET /owa/auth/logon.aspx HTTP/1.1" 404 Not Found
+INFO:     185.180.143.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     175.100.20.194:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     186.29.79.105:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     186.29.79.105:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     142.231.38.126:0 - "GET /feed HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 756, in _write_bytes
+    self._sock.sendall(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 547, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 814, in _execute_command
+    self._write_bytes(packet)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 759, in _write_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 79, in getFeed
+    return db.query(models.Post).all()
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2772, in all
+    return self._iter().all()
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2907, in _iter
+    result = self.session.execute(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1714, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 333, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1572, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1943, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2124, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 547, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 814, in _execute_command
+    self._write_bytes(packet)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 759, in _write_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+[SQL: SELECT posts.id AS posts_id, posts.user_id AS posts_user_id, posts.description AS posts_description, posts.happiness AS posts_happiness, posts.`likesCount` AS `posts_likesCount`, posts.`commentCounts` AS `posts_commentCounts` 
+FROM posts]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO:     142.231.38.126:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /12 HTTP/1.1" 304 Not Modified
+INFO:     142.231.38.126:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /16 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /17 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /18 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /19 HTTP/1.1" 304 Not Modified
+INFO:     142.231.38.126:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /21 HTTP/1.1" 304 Not Modified
+INFO:     142.231.38.126:0 - "GET /22 HTTP/1.1" 304 Not Modified
+INFO:     142.231.38.126:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /28 HTTP/1.1" 304 Not Modified
+INFO:     142.231.38.126:0 - "GET /29 HTTP/1.1" 304 Not Modified
+INFO:     142.231.38.126:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /30 HTTP/1.1" 304 Not Modified
+INFO:     142.231.38.126:0 - "GET /31 HTTP/1.1" 304 Not Modified
+INFO:     142.231.38.126:0 - "GET /32 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /33 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /34 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /35 HTTP/1.1" 304 Not Modified
+INFO:     142.231.38.126:0 - "GET /36 HTTP/1.1" 200 OK
+INFO:     142.231.38.126:0 - "GET /37 HTTP/1.1" 304 Not Modified
+INFO:     142.231.38.126:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     152.89.196.23:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+INFO:     Will watch for changes in these directories: ['/home/wg25r/Project_310/Back_End']
+ERROR:    [Errno 98] Address already in use
+INFO:     167.248.133.45:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.248.133.45:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     205.210.31.37:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     142.231.76.38:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.76.38:0 - "GET /20 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /21 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /22 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /23 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /24 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /25 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /26 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /27 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /31 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /30 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /28 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /29 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /33 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /32 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /34 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /36 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /35 HTTP/1.1" 304 Not Modified
+INFO:     142.231.76.38:0 - "GET /37 HTTP/1.1" 304 Not Modified
+INFO:     152.89.196.211:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Unsupported upgrade request.
+INFO:     64.62.197.228:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     194.76.226.57:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+INFO:     194.76.226.57:0 - "POST /owa/auth.owa HTTP/1.1" 404 Not Found
+INFO:     194.180.48.125:0 - "GET /explore HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Unsupported upgrade request.
+INFO:     137.184.168.3:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.19.196.234:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     162.19.196.234:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     185.180.143.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:60944 - "HEAD / HTTP/1.0" 404 Not Found
+INFO:     143.198.110.216:35318 - "GET /system_api.php HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:0 - "GET /system_api.php HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:35446 - "GET /c/version.js HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:0 - "GET /c/version.js HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:35586 - "GET /streaming/clients_live.php HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:0 - "GET /streaming/clients_live.php HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:35762 - "GET /stalker_portal/c/version.js HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:0 - "GET /stalker_portal/c/version.js HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:35894 - "GET /stream/live.php HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:0 - "GET /stream/live.php HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:36060 - "GET /flu/403.html HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:0 - "GET /flu/403.html HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:36208 - "GET / HTTP/1.1" 404 Not Found
+INFO:     143.198.110.216:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /actuator/gateway/routes HTTP/1.1" 404 Not Found
+INFO:     194.55.186.123:0 - "GET /explore HTTP/1.1" 404 Not Found
+INFO:     192.241.221.72:0 - "GET /autodiscover/autodiscover.json?@zdi/Powershell HTTP/1.1" 404 Not Found
+INFO:     206.87.5.5:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /16 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /17 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /18 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /19 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /22 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /21 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /28 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /29 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /30 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /31 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /32 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /34 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /33 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /35 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /36 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /37 HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "POST /post/ HTTP/1.1" 422 Unprocessable Entity
+INFO:     206.87.5.5:0 - "POST /post/ HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.87.5.5:0 - "GET /38 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /16 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /17 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /18 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /19 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /21 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /22 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /28 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /29 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /30 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /31 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /32 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /33 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /34 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /35 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /36 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /37 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /38 HTTP/1.1" 200 OK
+INFO:     45.11.57.48:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     35.195.93.98:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     66.175.210.109:0 - "GET /api/v1 HTTP/1.1" 404 Not Found
+INFO:     192.241.213.66:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     192.241.213.202:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     162.221.192.26:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.213.188:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     185.180.143.7:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     194.55.186.123:0 - "GET /explore HTTP/1.1" 404 Not Found
+INFO:     128.14.134.170:0 - "GET /admin/ HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     198.58.122.115:0 - "GET /XAQr HTTP/1.1" 404 Not Found
+INFO:     198.58.122.115:0 - "GET /pQDX HTTP/1.1" 404 Not Found
+INFO:     192.241.218.98:0 - "GET /version HTTP/1.1" 404 Not Found
+INFO:     162.19.196.233:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     162.19.196.233:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     206.12.14.21:0 - "GET /feed HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 756, in _write_bytes
+    self._sock.sendall(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 547, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 814, in _execute_command
+    self._write_bytes(packet)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 759, in _write_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 79, in getFeed
+    return db.query(models.Post).all()
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2772, in all
+    return self._iter().all()
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2907, in _iter
+    result = self.session.execute(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1714, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 333, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1572, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1943, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2124, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 547, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 814, in _execute_command
+    self._write_bytes(packet)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 759, in _write_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+[SQL: SELECT posts.id AS posts_id, posts.user_id AS posts_user_id, posts.description AS posts_description, posts.happiness AS posts_happiness, posts.`likesCount` AS `posts_likesCount`, posts.`commentCounts` AS `posts_commentCounts` 
+FROM posts]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO:     206.12.14.21:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /16 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /17 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /18 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /19 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /21 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /22 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /28 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /29 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /30 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /31 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /32 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /33 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /34 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /35 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /36 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /37 HTTP/1.1" 200 OK
+INFO:     206.12.14.21:0 - "GET /38 HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 160ms/step
+INFO:     206.12.14.21:0 - "POST /post/ HTTP/1.1" 200 OK
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 32ms/step
+INFO:     206.12.14.21:0 - "POST /post/ HTTP/1.1" 200 OK
+INFO:     172.105.208.132:47778 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP21 HTTP/1.1" 404 Not Found
+INFO:     192.241.219.55:0 - "GET /owa/auth/logon.aspx HTTP/1.1" 404 Not Found
+INFO:     192.241.212.107:0 - "GET /owa/auth/x.js HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "POST /mifs/.%3B/services/LogService HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /console/ HTTP/1.1" 404 Not Found
+INFO:     184.105.139.98:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     137.226.113.44:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.4.199:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /16 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /17 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /18 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /19 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /20 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /22 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /21 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /23 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /25 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /24 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /26 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /27 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /28 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /29 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /30 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /31 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /32 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /33 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /34 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /35 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /36 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /37 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /38 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /39 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /40 HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /feed HTTP/1.1" 200 OK
