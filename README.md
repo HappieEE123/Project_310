@@ -77,6 +77,7 @@ the documentation for the backend is located in HappieEE123/Project_310/FastAPI-
 ## Tech Stack
 - Front End: Ionic + React 
 - Backend: Python Fast API, Node.js for crash detector, bash for logging.
+- ML: TensorFlow was used to built the model, numpy and Pillow was used to process the data
 - Database: MySQL.
 
 
