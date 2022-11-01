@@ -15936,3 +15936,542 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 INFO:     Started server process [66085]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
+INFO:     206.87.4.199:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /11 HTTP/1.1" 304 Not Modified
+INFO:     206.87.4.199:0 - "GET /10 HTTP/1.1" 304 Not Modified
+INFO:     206.87.4.199:0 - "GET /9 HTTP/1.1" 304 Not Modified
+INFO:     206.87.4.199:0 - "GET /8 HTTP/1.1" 304 Not Modified
+INFO:     206.87.4.199:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     206.87.4.199:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     206.87.4.199:0 - "GET /11 HTTP/1.1" 304 Not Modified
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 236ms/step
+INFO:     206.87.4.199:0 - "POST /post/ HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /11 HTTP/1.1" 304 Not Modified
+INFO:     206.87.4.199:0 - "GET /10 HTTP/1.1" 304 Not Modified
+INFO:     206.87.4.199:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     206.87.4.199:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     206.87.4.199:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.87.4.199:0 - "GET /11 HTTP/1.1" 304 Not Modified
+INFO:     206.87.4.199:0 - "GET /10 HTTP/1.1" 304 Not Modified
+INFO:     206.87.4.199:0 - "GET /9 HTTP/1.1" 304 Not Modified
+INFO:     206.87.4.199:0 - "GET /8 HTTP/1.1" 304 Not Modified
+INFO:     206.87.4.199:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     206.87.4.199:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     64.227.178.252:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     192.241.219.153:0 - "GET /actuator/health HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /11 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /10 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /9 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /8 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     185.100.87.136:0 - "POST /FD873AC4-CF86-4FED-84EC-4BD59C6F17A7 HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /11 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /9 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /10 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /8 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "POST /post/ HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     34.78.6.216:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     128.1.248.42:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /12 HTTP/1.1" 304 Not Modified
+INFO:     24.71.176.3:0 - "GET /11 HTTP/1.1" 304 Not Modified
+INFO:     24.71.176.3:0 - "GET /8 HTTP/1.1" 304 Not Modified
+INFO:     24.71.176.3:0 - "GET /10 HTTP/1.1" 304 Not Modified
+INFO:     24.71.176.3:0 - "GET /9 HTTP/1.1" 304 Not Modified
+INFO:     24.71.176.3:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /13 HTTP/1.1" 304 Not Modified
+INFO:     24.71.176.3:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     172.218.237.28:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     172.218.237.28:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     35.237.4.214:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     198.235.24.166:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     134.209.155.32:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     134.209.155.32:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     134.209.155.32:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Unsupported upgrade request.
+WARNING:  Invalid HTTP request received.
+INFO:     175.100.20.194:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     209.141.49.169:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     209.141.49.169:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     205.185.116.25:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     205.185.116.25:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     192.241.212.209:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     45.134.144.48:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/ HTTP/1.1" 404 Not Found
+INFO:     185.180.143.7:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     34.141.168.179:0 - "OPTIONS / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     24.71.176.3:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /9 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /11 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /8 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /10 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     72.251.235.155:0 - "GET /api/v2/cmdb/system/admin/admin HTTP/1.1" 404 Not Found
+INFO:     198.235.24.183:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.145.58:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.145.58:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /10 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /11 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /8 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /9 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     24.71.176.3:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     24.71.176.3:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     192.241.221.8:0 - "GET /autodiscover/autodiscover.json?@zdi/Powershell HTTP/1.1" 404 Not Found
+INFO:     81.209.147.5:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     81.209.147.5:59238 - "GET / HTTP/1.0" 404 Not Found
+INFO:     81.209.147.5:37112 - "GET / HTTP/1.0" 404 Not Found
+INFO:     152.89.196.23:0 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+INFO:     176.58.119.254:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     188.166.34.5:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     188.166.34.5:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     188.166.34.5:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     106.75.252.189:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.12.14.117:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.12.14.117:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     206.12.14.117:0 - "GET /11 HTTP/1.1" 200 OK
+INFO:     206.12.14.117:0 - "GET /9 HTTP/1.1" 200 OK
+INFO:     206.12.14.117:0 - "GET /10 HTTP/1.1" 200 OK
+INFO:     206.12.14.117:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     206.12.14.117:0 - "GET /8 HTTP/1.1" 200 OK
+INFO:     206.12.14.117:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     206.12.14.117:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     206.12.14.117:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.12.14.117:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     206.12.14.117:0 - "GET /7 HTTP/1.1" 404 Not Found
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 167ms/step
+INFO:     206.12.14.117:0 - "POST /post/ HTTP/1.1" 200 OK
+INFO:     194.180.48.125:0 - "GET /explore HTTP/1.1" 404 Not Found
+INFO:     188.166.40.92:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     188.166.40.92:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     188.166.40.92:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     185.180.143.141:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     185.180.143.141:0 - "GET /solr/ HTTP/1.1" 404 Not Found
+INFO:     195.201.222.189:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     195.201.222.189:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     206.12.14.117:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.12.14.117:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     206.12.14.117:0 - "GET /12 HTTP/1.1" 304 Not Modified
+INFO:     206.12.14.117:0 - "GET /10 HTTP/1.1" 304 Not Modified
+INFO:     206.12.14.117:0 - "GET /13 HTTP/1.1" 304 Not Modified
+INFO:     206.12.14.117:0 - "GET /9 HTTP/1.1" 304 Not Modified
+INFO:     206.12.14.117:0 - "GET /11 HTTP/1.1" 304 Not Modified
+INFO:     206.12.14.117:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     206.12.14.117:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     206.12.14.117:0 - "GET /8 HTTP/1.1" 304 Not Modified
+INFO:     159.223.239.175:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     74.82.47.8:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.12.14.117:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.12.14.117:0 - "GET /14 HTTP/1.1" 304 Not Modified
+INFO:     206.12.14.117:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     206.12.14.117:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     172.104.233.239:0 - "GET /3Wii HTTP/1.1" 404 Not Found
+INFO:     172.104.233.239:0 - "GET /s2Wa HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     43.134.171.185:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     194.180.48.44:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     94.102.61.8:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.218.75:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     Will watch for changes in these directories: ['/home/wg25r/Project_310/Back_End']
+INFO:     Uvicorn running on http://0.0.0.0:1080 (Press CTRL+C to quit)
+INFO:     Started reloader process [107520] using WatchFiles
+2022-10-29 23:34:55.144058: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-29 23:34:55.757633: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-29 23:34:55.758079: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-29 23:34:55.855168: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-29 23:34:57.482666: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-29 23:34:57.482969: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-29 23:34:57.483010: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-29 23:35:01.458826: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-29 23:35:01.459680: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-29 23:35:01.459822: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-29 23:35:01.461414: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [107522]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [107522]
+INFO:     Stopping reloader process [107520]
+INFO:     Will watch for changes in these directories: ['/home/wg25r/Project_310/Back_End']
+INFO:     Uvicorn running on http://0.0.0.0:1080 (Press CTRL+C to quit)
+INFO:     Started reloader process [1263] using WatchFiles
+2022-10-29 23:39:06.057170: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-29 23:39:06.601030: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-29 23:39:06.601237: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-29 23:39:06.679152: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-29 23:39:08.831584: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-29 23:39:08.831836: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-29 23:39:08.831896: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-29 23:39:11.024775: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-29 23:39:11.025951: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-29 23:39:11.026111: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-29 23:39:11.027698: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [1266]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     194.180.48.44:0 - "HEAD / HTTP/1.1" 404 Not Found
+INFO:     209.141.49.169:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     209.141.36.231:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     209.141.49.169:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     209.141.36.231:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     87.236.176.90:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     Will watch for changes in these directories: ['/home/wg25r/Project_310/Back_End']
+INFO:     Uvicorn running on http://0.0.0.0:1080 (Press CTRL+C to quit)
+INFO:     Started reloader process [16709] using WatchFiles
+2022-10-30 02:21:45.046678: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-30 02:21:45.747744: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-30 02:21:45.747897: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-30 02:21:45.867377: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-30 02:21:48.115815: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-30 02:21:48.116833: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-30 02:21:48.116876: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-30 02:21:51.616734: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-30 02:21:51.617316: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-30 02:21:51.617454: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-30 02:21:51.618691: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [16723]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     188.165.87.108:0 - "GET /.well-known/security.txt HTTP/1.1" 404 Not Found
+INFO:     206.87.4.189:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     206.87.4.189:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     64.71.249.5:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     64.71.249.5:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     185.224.128.3:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     159.223.163.97:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     159.223.163.97:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     159.223.163.97:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     4.233.106.66:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     4.233.106.66:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     192.241.220.250:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.241.215.97:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     167.94.138.63:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.138.63:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     195.178.120.116:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     34.77.127.183:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.208.123:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     192.241.220.110:0 - "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.1" 404 Not Found
+INFO:     192.241.216.180:0 - "GET /owa/auth/x.js HTTP/1.1" 404 Not Found
+INFO:     192.241.219.20:0 - "GET /owa/auth/logon.aspx HTTP/1.1" 404 Not Found
+INFO:     192.241.217.66:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     185.224.128.3:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.213.23:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     64.62.197.126:0 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     194.180.48.125:0 - "GET /docker-compose.yml HTTP/1.1" 404 Not Found
+INFO:     128.199.175.160:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     45.11.57.48:0 - "POST /ajax HTTP/1.1" 404 Not Found
+INFO:     87.236.176.85:34637 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     103.203.57.5:43346 - "GET /echo.php?info=20221030154907 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     103.203.57.5:44306 - "GET / HTTP/1.1" 404 Not Found
+INFO:     128.14.209.162:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     63.251.224.106:0 - "GET /api/v2/cmdb/system/admin/admin HTTP/1.1" 404 Not Found
+INFO:     162.142.125.9:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.9:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     205.210.31.153:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     128.14.134.170:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     46.101.194.221:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     46.101.194.221:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     46.101.194.221:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.216.156:0 - "GET /version HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     128.14.133.58:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     128.199.151.65:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     128.199.151.65:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     128.199.151.65:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16723]
+INFO:     Stopping reloader process [16709]
+INFO:     Will watch for changes in these directories: ['/home/wg25r/Project_310/Back_End']
+INFO:     Uvicorn running on http://0.0.0.0:1080 (Press CTRL+C to quit)
+INFO:     Started reloader process [1280] using WatchFiles
+2022-10-30 23:45:51.554353: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-30 23:45:52.096902: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-30 23:45:52.097000: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-10-30 23:45:52.187617: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-30 23:45:53.550136: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-30 23:45:53.550451: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-30 23:45:53.550486: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2022-10-30 23:45:55.855602: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/lib64/python3.10/site-packages/cv2/../../lib64:
+2022-10-30 23:45:55.856262: W tensorflow/stream_executor/cuda/cuda_driver.cc:263] failed call to cuInit: UNKNOWN ERROR (303)
+2022-10-30 23:45:55.856374: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (vultr.guest): /proc/driver/nvidia/version does not exist
+2022-10-30 23:45:55.858013: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [1282]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  Invalid HTTP request received.
+INFO:     23.224.186.74:36500 - "GET / HTTP/1.1" 404 Not Found
+INFO:     23.224.186.74:39440 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     23.224.186.74:39504 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     23.224.186.74:39572 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     65.49.20.113:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     128.1.248.42:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.220.236:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     35.160.115.64:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     116.203.42.252:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     116.203.42.252:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     20.218.104.254:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     20.218.104.254:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     80.76.51.246:0 - "POST / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     130.211.54.158:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     128.14.134.134:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     161.35.129.171:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     161.35.129.171:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     161.35.129.171:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP21 HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     63.251.232.75:0 - "GET /Electron/download/windows/%5CProgram%20Files%5C3CX%20Phone%20System%5CData%5CDB%5Cbase%5C16384%5C16393 HTTP/1.1" 404 Not Found
+INFO:     192.241.212.132:0 - "GET /autodiscover/autodiscover.json?@zdi/Powershell HTTP/1.1" 404 Not Found
+INFO:     192.241.219.168:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.1" 404 Not Found
+INFO:     188.166.87.67:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "POST /mifs/.%3B/services/LogService HTTP/1.1" 404 Not Found
+INFO:     192.241.219.55:0 - "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.1" 404 Not Found
+INFO:     192.241.214.56:0 - "GET /owa/auth/logon.aspx HTTP/1.1" 404 Not Found
+INFO:     192.241.205.22:0 - "GET /owa/auth/x.js HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /console/ HTTP/1.1" 404 Not Found
+INFO:     194.180.48.125:0 - "GET /docker-compose.yml HTTP/1.1" 404 Not Found
+INFO:     128.14.141.34:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "POST /Autodiscover/Autodiscover.xml HTTP/1.1" 404 Not Found
+INFO:     142.93.222.128:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     71.6.232.27:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /_ignition/execute-solution HTTP/1.1" 404 Not Found
+INFO:     194.180.48.125:0 - "GET /explore HTTP/1.1" 404 Not Found
+INFO:     194.180.48.44:0 - "HEAD / HTTP/1.1" 404 Not Found
+INFO:     80.66.83.75:0 - "PUT /api/v2/cmdb/system/admin/admin HTTP/1.1" 404 Not Found
+INFO:     24.93.205.24:0 - "GET /QYhJ HTTP/1.1" 404 Not Found
+INFO:     24.93.205.24:0 - "GET /iKeD HTTP/1.1" 404 Not Found
+INFO:     193.118.55.170:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     23.251.102.74:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.241.212.218:0 - "GET /actuator/health HTTP/1.1" 404 Not Found
+INFO:     172.105.208.132:52428 - "GET / HTTP/1.1" 404 Not Found
+INFO:     165.22.40.133:61953 - "GET / HTTP/1.0" 404 Not Found
+INFO:     194.180.48.125:0 - "GET /docker-compose.yml HTTP/1.1" 404 Not Found
+INFO:     152.89.196.84:0 - "GET /.git/HEAD HTTP/1.1" 404 Not Found
+INFO:     142.231.83.40:0 - "GET /post/ HTTP/1.1" 405 Method Not Allowed
+INFO:     142.231.83.40:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     142.231.83.40:0 - "GET /feed HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 756, in _write_bytes
+    self._sock.sendall(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 547, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 814, in _execute_command
+    self._write_bytes(packet)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 759, in _write_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/wg25r/.local/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/home/wg25r/.local/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/home/wg25r/Project_310/Back_End/./main.py", line 81, in getFeed
+    return (db.query(models.Post).order_by(models.Post.id.desc()).all())
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2772, in all
+    return self._iter().all()
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2907, in _iter
+    result = self.session.execute(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1714, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 333, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1572, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1943, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2124, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "/home/wg25r/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 547, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 814, in _execute_command
+    self._write_bytes(packet)
+  File "/home/wg25r/.local/lib/python3.10/site-packages/pymysql/connections.py", line 759, in _write_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+[SQL: SELECT posts.id AS posts_id, posts.date AS posts_date, posts.user_id AS posts_user_id, posts.description AS posts_description, posts.happiness AS posts_happiness, posts.`likesCount` AS `posts_likesCount`, posts.`commentCounts` AS `posts_commentCounts` 
+FROM posts ORDER BY posts.id DESC]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO:     142.231.83.40:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     142.231.83.40:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     142.231.83.40:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     142.231.83.40:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     142.231.83.40:0 - "GET /10 HTTP/1.1" 200 OK
+INFO:     142.231.83.40:0 - "GET /11 HTTP/1.1" 200 OK
+INFO:     142.231.83.40:0 - "GET /9 HTTP/1.1" 200 OK
+INFO:     142.231.83.40:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     142.231.83.40:0 - "GET /8 HTTP/1.1" 200 OK
+INFO:     142.231.83.40:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     109.237.98.226:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     164.90.136.218:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     164.90.136.218:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     164.90.136.218:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     193.118.53.210:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.221:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.221:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 404 Not Found
+INFO:     46.101.159.129:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     46.101.159.129:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     80.66.83.75:0 - "PUT /api/v2/cmdb/system/admin/admin HTTP/1.1" 404 Not Found
+INFO:     64.180.206.88:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /11 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /10 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /9 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /8 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     64.180.206.88:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     64.180.206.88:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     64.180.206.88:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     64.180.206.88:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /11 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /10 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /9 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /8 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     64.180.206.88:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     64.180.206.88:0 - "POST /post/ HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     64.180.206.88:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     64.180.206.88:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     207.154.197.175:0 - "GET /ab2g HTTP/1.1" 404 Not Found
+INFO:     207.154.197.175:0 - "GET /ab2h HTTP/1.1" 404 Not Found
+INFO:     207.154.197.175:0 - "GET / HTTP/1.1" 404 Not Found
+INFO:     206.87.4.208:0 - "GET /feed HTTP/1.1" 200 OK
+INFO:     206.87.4.208:0 - "GET /15 HTTP/1.1" 200 OK
+INFO:     206.87.4.208:0 - "GET /14 HTTP/1.1" 200 OK
+INFO:     206.87.4.208:0 - "GET /13 HTTP/1.1" 200 OK
+INFO:     206.87.4.208:0 - "GET /12 HTTP/1.1" 200 OK
+INFO:     206.87.4.208:0 - "GET /11 HTTP/1.1" 200 OK
+INFO:     206.87.4.208:0 - "GET /10 HTTP/1.1" 200 OK
+INFO:     206.87.4.208:0 - "GET /9 HTTP/1.1" 200 OK
+INFO:     206.87.4.208:0 - "GET /8 HTTP/1.1" 200 OK
+INFO:     206.87.4.208:0 - "GET /7 HTTP/1.1" 404 Not Found
+INFO:     206.87.4.208:0 - "GET /1 HTTP/1.1" 404 Not Found
+INFO:     152.89.196.211:0 - "GET / HTTP/1.1" 404 Not Found
