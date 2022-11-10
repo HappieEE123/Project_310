@@ -1,6 +1,6 @@
 from typing import Union
 import time
-from fastapi import FastAPI, File, UploadFile, Depends, Form
+from fastapi import FastAPI, File, UploadFile, Depends, Form, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
@@ -94,14 +94,7 @@ def getFeed( db: Session = Depends(get_db)):
 
 
 import bcrypt
-@app.post("/login/")
-async def create_LogIn(login: Login):
-    try:
-        with Session(engine) as session:
-            u = session.query(models.User).filter(models.User.username == login.username)
-            return bcrypt.checkpw(login.password.encode('utf-8'),list(u)[0].passwordSalt.encode("utf-8")) 
-    except IndexError as e:
-        return "No User"
+
 
 def issue(exp_time, username):
     JWT = {"username": username, "exp_time": exp_time}
@@ -111,7 +104,21 @@ def issue(exp_time, username):
     JWT["signature"] = signature
     return JWT
 
-    
+
+
+@app.post("/login/")
+async def create_LogIn(login: Login):
+    try:
+        with Session(engine) as session:
+            u = session.query(models.User).filter(models.User.username == login.username)
+            if bcrypt.checkpw(login.password.encode('utf-8'),list(u)[0].passwordSalt.encode("utf-8")):
+                response.set_cookie(key="token", value=issue(24*60*60, login.username))
+                return "OK:)"
+    except IndexError as e:
+        return "No User"
+
+
+
 @app.post("/signup/")
 async def create_signup(signup: Signup):  
     try:
