@@ -8,6 +8,8 @@ class User(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     username = Column(String(20), index=True)
+    passwordSalt = Column(String(65), index=True)
+
 
 
 class Post(Base):

@@ -11,7 +11,21 @@ import crud, models, schemas
 from sqlalchemy.orm import Session
 import ML
 
+from pydantic import BaseModel
+class Login(BaseModel):
+    username : str
+    password : str
+
+class signup(BaseModel):
+    username : str
+    password : str
+    phone-email : str
+
+
+
 app = FastAPI()
+
+
 
 import random
 from html import escape
@@ -77,3 +91,38 @@ async def post(file: UploadFile, db: Session = Depends(get_db), description: str
 @app.get("/feed")
 def getFeed( db: Session = Depends(get_db)):
     return db.query(models.Post).all()
+
+
+import bcrypt
+@app.post("/login/")
+async def create_LogIn(login: Login):
+    try:
+        with Session(engine) as session:
+            u = session.query(models.User).filter(models.User.username == login.username)
+            return bcrypt.checkpw(login.password.encode('utf-8'),list(u)[0].passwordSalt.encode("utf-8")) 
+    except IndexError as e:
+        return "No User"
+
+def issue(exp_time, username):
+    JWT = {"username": username, "exp_time": exp_time}
+    msg=username+"=="+str(exp_time)+secret
+    # https://stackoverflow.com/questions/7585435/best-way-to-convert-string-to-bytes-in-python-3
+    signature = hmac.new(key.encode('utf-8'), msg = msg.encode('utf-8'), digestmod=hashlib.sha256).hexdigest()
+    JWT["signature"] = signature
+    return JWT
+
+    
+@app.post("/signup/")
+async def create_signup(signup: Signup):  
+    try:
+        with Session(engine) as session:
+            u = session.query(User).filter(models.User.username == username)
+            if len(list(u)) != 0:
+                return -1
+            salt = bcrypt.gensalt()
+            hash = bcrypt.hashpw(password.encode('utf-8'), salt)
+            db_user = User(signup.username = username, signup.passwordSalt=hash , signup.phone-email = phone-email)
+            session.add(db_user)
+            session.commit()
+    except:
+        return "error"
