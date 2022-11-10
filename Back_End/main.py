@@ -99,7 +99,7 @@ async def create_LogIn(login: Login):
     try:
         with Session(engine) as session:
             u = session.query(models.User).filter(models.User.username == login.username)
-            return bcrypt.checkpw(login.password.encode('utf-8'),list(u)[0].passwordSalt.encode("utf-8")) 
+            return bcrypt.checkpw(login.password,list(u)[0].passwordSalt.encode("utf-8")) 
     except IndexError as e:
         return "No User"
 
