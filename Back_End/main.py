@@ -19,7 +19,7 @@ class Login(BaseModel):
 class signup(BaseModel):
     username : str
     password : str
-    phone-email : str
+    phone_email : str
 
 
 
@@ -94,31 +94,16 @@ def getFeed( db: Session = Depends(get_db)):
 
 
 import bcrypt
-
-
-def issue(exp_time, username):
-    JWT = {"username": username, "exp_time": exp_time}
-    msg=username+"=="+str(exp_time)+secret
-    # https://stackoverflow.com/questions/7585435/best-way-to-convert-string-to-bytes-in-python-3
-    signature = hmac.new(key.encode('utf-8'), msg = msg.encode('utf-8'), digestmod=hashlib.sha256).hexdigest()
-    JWT["signature"] = signature
-    return JWT
-
-
-
 @app.post("/login/")
 async def create_LogIn(login: Login):
     try:
         with Session(engine) as session:
             u = session.query(models.User).filter(models.User.username == login.username)
-            if bcrypt.checkpw(login.password.encode('utf-8'),list(u)[0].passwordSalt.encode("utf-8")):
-                response.set_cookie(key="token", value=issue(24*60*60, login.username))
-                return "OK:)"
+            return bcrypt.checkpw(login.password.encode('utf-8'),list(u)[0].passwordSalt.encode("utf-8")) 
     except IndexError as e:
         return "No User"
 
-
-
+    
 @app.post("/signup/")
 async def create_signup(signup: Signup):  
     try:
@@ -128,8 +113,9 @@ async def create_signup(signup: Signup):
                 return -1
             salt = bcrypt.gensalt()
             hash = bcrypt.hashpw(password.encode('utf-8'), salt)
-            db_user = User(signup.username = username, signup.passwordSalt=hash , signup.phone-email = phone-email)
+            db_user = User(signup.username = username, signup.passwordSalt=hash , signup.phone_email = phone_email)
             session.add(db_user)
             session.commit()
+            return "OK"
     except:
         return "error"
