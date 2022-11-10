@@ -16,7 +16,7 @@ class Login(BaseModel):
     username : str
     password : str
 
-class signup(BaseModel):
+class Signup(BaseModel):
     username : str
     password : str
     phone_email : str
@@ -113,7 +113,7 @@ async def create_signup(signup: Signup):
                 return -1
             salt = bcrypt.gensalt()
             hash = bcrypt.hashpw(password.encode('utf-8'), salt)
-            db_user = User(signup.username = username, signup.passwordSalt=hash , signup.phone_email = phone_email)
+            db_user = models.User(username = signup.username, passwordSalt=hash , phone_email = signup.phone_email)
             session.add(db_user)
             session.commit()
             return "OK"
