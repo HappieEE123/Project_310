@@ -106,16 +106,13 @@ async def create_LogIn(login: Login):
     
 @app.post("/signup/")
 async def create_signup(signup: Signup):  
-    try:
         with Session(engine) as session:
-            u = session.query(User).filter(models.User.username == username)
+            u = session.query(models.User).filter(models.User.username == models.User.username)
             if len(list(u)) != 0:
                 return -1
             salt = bcrypt.gensalt()
-            hash = bcrypt.hashpw(password.encode('utf-8'), salt)
+            hash = bcrypt.hashpw(signup.password.encode('utf-8'), salt)
             db_user = models.User(username = signup.username, passwordSalt=hash , phone_email = signup.phone_email)
             session.add(db_user)
             session.commit()
             return "OK"
-    except:
-        return "error"
