@@ -34,10 +34,14 @@ setupIonicReact({
 });
 
 
-export default function Login() {
+export default function Signup() {
 
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [username, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
 
     return (
         <IonPage style={{
@@ -46,7 +50,7 @@ export default function Login() {
         }}>
             <IonHeader>
                 <IonToolbar>
-                    <IonTitle>Login</IonTitle>
+                    <IonTitle>Sign Up</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent>
@@ -57,6 +61,36 @@ export default function Login() {
                             style={{fontSize: "100px", color: "#0040ff"}}
                             icon={personCircle}
                         />
+                    </IonCol>
+                </IonRow>
+
+                <IonRow>
+                    <IonCol>
+                        <IonItem>
+                            <IonLabel position="floating">First Name</IonLabel>
+                            <IonInput type="text" required onIonChange={(e: any) => setFirstName(e.target.value)}>
+                            </IonInput>
+                        </IonItem>
+                    </IonCol>
+                </IonRow>
+
+                <IonRow>
+                    <IonCol>
+                        <IonItem>
+                            <IonLabel position="floating">Last Name</IonLabel>
+                            <IonInput type="text" required onIonChange={(e: any) => setLastName(e.target.value)}>
+                            </IonInput>
+                        </IonItem>
+                    </IonCol>
+                </IonRow>
+
+                <IonRow>
+                    <IonCol>
+                        <IonItem>
+                            <IonLabel position="floating">Username</IonLabel>
+                            <IonInput type="text" required onIonChange={(e: any) => setUserName(e.target.value)}>
+                            </IonInput>
+                        </IonItem>
                     </IonCol>
                 </IonRow>
 
@@ -83,18 +117,21 @@ export default function Login() {
                 <IonRow>
                     <IonCol>
                         <p style={{fontSize: "small"}}>
-                            By clicking Login you agree to our <a href="#">Policy</a>
+                            By clicking Sign Up you agree to our <a href="#">Policy</a>
                         </p>
                         <IonButton expand="block" onClick={() => {
                             console.log({
+                                firstName,
+                                lastName,
+                                username,
                                 email,
                                 password
                             })
                         }}>
-                            Login
+                            Sign Up
                         </IonButton>
                         <p style={{fontSize: "medium"}}>
-                            Don't have an account? <a href="/signup">Sign Up!</a>
+                            Already have an account? <a href="/login">Login!</a>
                         </p>
                     </IonCol>
                 </IonRow>
