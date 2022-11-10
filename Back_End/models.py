@@ -23,3 +23,12 @@ class Post(Base):
     happiness = Column(Integer)
     likesCount = Column(Integer)
     commentCounts = Column(Integer)
+
+class Comment(Base):
+    __tablename__ = "comments"
+
+    id = Column(Integer)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    post_id = Column(Integer, ForeignKey("post.id"))
+    description = Column(String(300))
+    date Column(BigInteger)
