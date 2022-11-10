@@ -28,7 +28,12 @@ interface Props {
 }
 
 const Card = ({postData}: Props) => {
-    console.log('hello')
+    console.log('hello');
+    function UNIX2String(unixTime: number)
+    {
+        const date = new Date(unixTime * 1000);
+        return date.toLocaleDateString()
+    }
     return (
         <IonCard>
             <IonCardContent>
@@ -38,7 +43,7 @@ const Card = ({postData}: Props) => {
                     </IonAvatar>
                     <IonLabel>
                         <IonCardSubtitle>{faker.name.firstName().slice(0, 5)}_{faker.name.lastName().slice(0, 5)}{Math.round(Math.random() * 100)}</IonCardSubtitle>
-                        <p>6 days ago</p>
+                        <p>{UNIX2String(postData.date)}</p>
                     </IonLabel>
                     {/* <div className="chip">
                         <div className='filledChip'> */}
