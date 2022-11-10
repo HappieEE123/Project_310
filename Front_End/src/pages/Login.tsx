@@ -100,6 +100,5 @@ export default function Login() {
                 </IonRow>
             </IonContent>
         </IonPage>
-
     );
 };
