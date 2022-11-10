@@ -93,13 +93,33 @@ def getFeed( db: Session = Depends(get_db)):
     return db.query(models.Post).all()
 
 
+key = "uweDW^TDT#DH#FJ" # FOR DEMO ONLY! MUST BE DIFFERENT FOR PRODUCTION!
+secret  = "UIHWE&^X^&*$&#YHIOEJFIOEUF&*RYUH" # FOR DEMO ONLY! MUST BE DIFFERENT FOR PRODUCTION!
+
+import hmac
+import hashlib
+
+
+def issue(exp_time, username):
+    JWT = {"username": username, "exp_time": exp_time}
+    msg=username+"=="+str(exp_time)+secret
+    # https://stackoverflow.com/questions/7585435/best-way-to-convert-string-to-bytes-in-python-3
+    signature = hmac.new(key.encode('utf-8'), msg = msg.encode('utf-8'), digestmod=hashlib.sha256).hexdigest()
+    JWT["signature"] = signature
+    return JWT
+
 import bcrypt
 @app.post("/login/")
-async def create_LogIn(login: Login):
+async def create_LogIn(login: Login, response: Response):
     try:
         with Session(engine) as session:
             u = session.query(models.User).filter(models.User.username == login.username)
-            return bcrypt.checkpw(login.password,list(u)[0].passwordSalt.encode("utf-8")) 
+            print(type(list(u)[0].passwordSalt))
+            if bcrypt.checkpw(login.password.encode("utf-8"),list(u)[0].passwordSalt):
+                response.set_cookie(key="token", value=issue(time.time()+24*3600, login.username))
+                return "OK"
+            else:
+                return "Wrong Password!"
     except IndexError as e:
         return "No User"
 
