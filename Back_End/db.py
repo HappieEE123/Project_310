@@ -6,7 +6,7 @@ import os
 
 try:
     with open("/home/wg25r/PSDSQL","r") as f: 
-        SQLPWD = f.read()
+        SQLPWD = f.read() 
     SQLALCHEMY_DATABASE_URL = "mysql+pymysql://wg25r:"+SQLPWD+"@localhost/COSC310"
 
     engine = create_engine(SQLALCHEMY_DATABASE_URL)
