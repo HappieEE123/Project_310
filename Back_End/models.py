@@ -31,4 +31,4 @@ class Comment(Base):
     user_id = Column(Integer, ForeignKey("users.id"))
     post_id = Column(Integer, ForeignKey("post.id"))
     description = Column(String(300))
-    date Column(BigInteger)
+    date = Column(BigInteger)
