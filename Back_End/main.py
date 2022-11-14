@@ -77,3 +77,6 @@ async def post(file: UploadFile, db: Session = Depends(get_db), description: str
 @app.get("/feed")
 def getFeed( db: Session = Depends(get_db)):
     return db.query(models.Post).all()
+
+
+@app.post("/likes")
