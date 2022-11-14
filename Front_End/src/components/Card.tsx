@@ -1,9 +1,10 @@
 import './Card.css';
 import {IonAvatar, IonCard, IonCardContent, IonCardSubtitle, IonIcon, IonItem, IonLabel} from '@ionic/react';
 import {chatboxEllipsesOutline, thumbsUpOutline} from 'ionicons/icons';
+import { CommentSection} from 'react-comments-section'
 
 import {faker} from '@faker-js/faker';
-import React from "react";
+import React, {useState} from "react";
 import axios from "axios";
 
 interface Props {
@@ -12,7 +13,8 @@ interface Props {
 }
 
 const Card = ({postData}: Props) => {
-    console.log('hello');
+    const [showComments, setShowComments] = useState(false);
+
     const UNIX2String = (unixTime: number) => {
         const date = new Date(unixTime * 1000);
         return date.toLocaleDateString()
@@ -30,9 +32,17 @@ const Card = ({postData}: Props) => {
             });
     }
 
-    const showComments = (postId: number) => {
-
-    }
+    const data = [
+        {
+            userId: '02b',
+            comId: '017',
+            fullName: 'Lily',
+            userProfile: 'https://www.linkedin.com/in/riya-negi-8879631a9/',
+            text: 'I think you have a point🤔',
+            avatarUrl: 'https://ui-avatars.com/api/name=Lily&background=random',
+            replies: []
+        }
+    ]
 
     return (
         <IonCard>
@@ -74,9 +84,38 @@ const Card = ({postData}: Props) => {
                 </IonIcon>
                 {postData.likesCount} &nbsp;
                 <IonIcon icon={chatboxEllipsesOutline}
-                         onClick={() => showComments(postData.id)}
+                         onClick={() => setShowComments(!showComments)}
                          style={{cursor: 'pointer'}}>
                 </IonIcon>
+                {showComments ?
+                    <CommentSection
+                        currentUser={{
+                            currentUserId: '01a',
+                            currentUserImg:
+                                'https://ui-avatars.com/api/name=Riya&background=random',
+                            currentUserProfile:
+                                'https://www.linkedin.com/in/riya-negi-8879631a9/',
+                            currentUserFullName: 'Riya Negi'
+                        }}
+                        logIn={{
+                            loginLink: 'http://localhost:3001/',
+                            signupLink: 'http://localhost:3001/'
+                        }}
+                        commentData={data}
+                        onSubmitAction={(data: {
+                            userId: string
+                            comId: string
+                            avatarUrl: string
+                            userProfile?: string
+                            fullName: string
+                            text: string
+                            replies: any
+                            commentId: string
+                        }) => console.log('check submit, ', data)}
+                        currentData={(data: any) => {
+                            console.log('current data', data)
+                        }}
+                    /> : null}
                 {Math.round(Math.random() * 50)} &nbsp;
                 {/* <IonIcon icon={bookmarkOutline}></IonIcon> {Math.round(Math.random()*50)} &nbsp; */}
                 <span style={{float: "right", fontSize: "20px"}}>
