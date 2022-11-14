@@ -26,8 +26,8 @@ export default function Login() {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-          
-      
+
+
       <IonRow>
         <IonCol>
           <IonIcon
@@ -36,16 +36,16 @@ export default function Login() {
         />
         </IonCol>
       </IonRow>
-        
-        
+
+
       <IonRow>
         <IonCol>
           <IonItem>
            <IonLabel position="floating"> Email</IonLabel>
            <IonInput
              type="email"
-             
-            
+
+
          >
            </IonInput>
           </IonItem>
@@ -57,8 +57,8 @@ export default function Login() {
           <IonItem>
            <IonLabel position="floating"> Password</IonLabel>
            <IonInput
-             
-            
+
+
          >
            </IonInput>
           </IonItem>
@@ -70,7 +70,7 @@ export default function Login() {
     <p style={{ fontSize: "small" }}>
       By clicking LOGIN you agree to our <a href="#">Policy</a>
     </p>
-    <IonButton expand="block" onClick={alert('login')}>
+    <IonButton expand="block" onClick={() => alert('login')}>
       Login
     </IonButton>
     <p style={{ fontSize: "medium" }}>
