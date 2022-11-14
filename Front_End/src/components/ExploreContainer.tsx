@@ -39,10 +39,10 @@ const user: Object[] = [
 const ExploreContainer = () => {
 
     const [postData, setPostData] = useState([]);
-    
+
     useEffect(() => {
         const fetchData = async() => {
-            await axios.get('https://api.weasoft.com/feed')
+            await axios.get('https://api.weasoft.com/feed/')
                 .then((res) => {
                     setPostData(res.data);
                 })

@@ -18,6 +18,7 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
+import {HashRouter, Link} from "react-router-dom";
 
 /* Theme variables */
 import './theme/variables.css';
@@ -27,14 +28,30 @@ setupIonicReact();
 
 const App: React.FC = () => (
     // <div style={{ backgroundColor: "lightgrey", textAlign: "center" }}>
+    // <IonApp>
+    //   <IonReactRouter>
+    //     <IonRouterOutlet>
+    //       <HashRouter basename="/home">
+    //         <Home/>
+    //       </HashRouter>
+    //       <HashRouter basename="/login">
+    //         <Login/>
+    //       </HashRouter>
+    //       <HashRouter basename="/signup">
+    //         <Signup/>
+    //       </HashRouter>
+    //     </IonRouterOutlet>
+    //   </IonReactRouter>
+    // </IonApp >
     <IonApp>
-      <IonReactRouter>
-        <IonRouterOutlet>
-          <Route path="/home" component={Home}/>
-          <Redirect exact from="/" to="/home"/>
-          <Route exact path="/login" component={Login}/>
-        </IonRouterOutlet>
-      </IonReactRouter>
+        <IonReactRouter>
+            <IonRouterOutlet>
+                <Route path="/home" component={Home}/>
+                <Redirect exact from="/" to="/home"/>
+                <Route exact path="/login" component={Login}/>
+                <Route exact path="/signup" component={Signup}/>
+            </IonRouterOutlet>
+        </IonReactRouter>
     </IonApp>
     // </div>
 );
