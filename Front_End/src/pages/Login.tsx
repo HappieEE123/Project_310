@@ -1,32 +1,23 @@
 import {
-    IonContent,
-    IonRow,
-    IonCol,
-    IonLabel,
-    IonModal,
-    IonButtons,
-    useIonActionSheet,
-    IonProgressBar,
     IonButton,
-    IonItem,
-    IonInput,
-    IonList,
-    IonBackButton,
-    IonTextarea,
-    IonFab,
-    IonFabButton,
-    IonIcon,
+    IonCol,
+    IonContent,
     IonHeader,
+    IonIcon,
+    IonInput,
+    IonItem,
+    IonLabel,
     IonPage,
+    IonRow,
     IonTitle,
     IonToolbar,
     setupIonicReact
 } from '@ionic/react';
-import {camera, addOutline, paperPlaneOutline, personCircle} from 'ionicons/icons';
-import ExploreContainer from '../components/ExploreContainer';
+import {personCircle} from 'ionicons/icons';
 import './Home.css';
 import React, {useState} from 'react';
-import type {OverlayEventDetail} from '@ionic/core';
+import axios from "axios";
+import {useHistory} from 'react-router-dom'
 
 
 setupIonicReact({
@@ -36,8 +27,26 @@ setupIonicReact({
 
 export default function Login() {
 
-    const [email, setEmail] = useState('');
+    let history = useHistory();
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+
+    const login = () => {
+        axios.post('https://api.weasoft.com/login/', {
+            username,
+            password,
+        })
+            .then(function (response) {
+                if (response.data.message) {
+                    // redirect to home page
+                    history.push('/home')
+                }
+                console.log(response.data);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
 
     return (
         <IonPage style={{
@@ -63,8 +72,8 @@ export default function Login() {
                 <IonRow>
                     <IonCol>
                         <IonItem>
-                            <IonLabel position="floating">Email</IonLabel>
-                            <IonInput type="email" required onIonChange={(e: any) => setEmail(e.target.value)}>
+                            <IonLabel position="floating">Username</IonLabel>
+                            <IonInput type="text" required onIonChange={(e: any) => setUsername(e.target.value)}>
                             </IonInput>
                         </IonItem>
                     </IonCol>
@@ -86,10 +95,11 @@ export default function Login() {
                             By clicking Login you agree to our <a href="#">Policy</a>
                         </p>
                         <IonButton expand="block" onClick={() => {
-                            console.log({
-                                email,
-                                password
-                            })
+                            // console.log({
+                            //     username,
+                            //     password
+                            // })
+                            login();
                         }}>
                             Login
                         </IonButton>

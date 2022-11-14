@@ -1,32 +1,23 @@
 import {
-    IonContent,
-    IonRow,
-    IonCol,
-    IonLabel,
-    IonModal,
-    IonButtons,
-    useIonActionSheet,
-    IonProgressBar,
     IonButton,
-    IonItem,
-    IonInput,
-    IonList,
-    IonBackButton,
-    IonTextarea,
-    IonFab,
-    IonFabButton,
-    IonIcon,
+    IonCol,
+    IonContent,
     IonHeader,
+    IonIcon,
+    IonInput,
+    IonItem,
+    IonLabel,
     IonPage,
+    IonRow,
     IonTitle,
     IonToolbar,
     setupIonicReact
 } from '@ionic/react';
-import {camera, addOutline, paperPlaneOutline, personCircle} from 'ionicons/icons';
-import ExploreContainer from '../components/ExploreContainer';
+import {personCircle} from 'ionicons/icons';
 import './Home.css';
 import React, {useState} from 'react';
-import type {OverlayEventDetail} from '@ionic/core';
+import axios from "axios";
+import {useHistory} from 'react-router-dom'
 
 
 setupIonicReact({
@@ -35,13 +26,29 @@ setupIonicReact({
 
 
 export default function Signup() {
-
+    let history = useHistory();
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [username, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    const signup = () => {
+        axios.post('https://api.weasoft.com/signup/', {
+            username,
+            password,
+            'phone_email': email
+        })
+            .then(function (response) {
+                if (response.status == 200) {
+                    // redirect to home page
+                    history.push('/home')
+                }
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
 
     return (
         <IonPage style={{
@@ -120,13 +127,14 @@ export default function Signup() {
                             By clicking Sign Up you agree to our <a href="#">Policy</a>
                         </p>
                         <IonButton expand="block" onClick={() => {
-                            console.log({
-                                firstName,
-                                lastName,
-                                username,
-                                email,
-                                password
-                            })
+                            // console.log({
+                            //     firstName,
+                            //     lastName,
+                            //     username,
+                            //     email,
+                            //     password
+                            // })
+                            signup();
                         }}>
                             Sign Up
                         </IonButton>
