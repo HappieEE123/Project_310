@@ -67,6 +67,7 @@ export default function Signup() {
                 <IonRow>
                     <IonCol>
                         <IonItem>
+                            
                             <IonLabel position="floating">First Name</IonLabel>
                             <IonInput type="text" required onIonChange={(e: any) => setFirstName(e.target.value)}>
                             </IonInput>

@@ -68,7 +68,7 @@ export default function Login() {
                             </IonInput>
                         </IonItem>
                     </IonCol>
-                </IonRow>
+                </IonRow>g
 
                 <IonRow>
                     <IonCol>
@@ -94,7 +94,7 @@ export default function Login() {
                             Login
                         </IonButton>
                         <p style={{fontSize: "medium"}}>
-                            Don't have an account? <a href="/signup">Sign Up!</a>
+                            Don't have an account? <a href="/workspace/Project_310/Front_End/src/pages/Signup.tsx">Sign Up!</a>
                         </p>
                     </IonCol>
                 </IonRow>
