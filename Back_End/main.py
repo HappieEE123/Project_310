@@ -1,6 +1,6 @@
 from typing import Union
 import time
-from fastapi import FastAPI, File, UploadFile, Depends, Form
+from fastapi import FastAPI, File, UploadFile, Depends, Form, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
@@ -12,7 +12,21 @@ from sqlalchemy.orm import Session
 from sqlalchemy import desc
 import ML
 
+from pydantic import BaseModel
+class Login(BaseModel):
+    username : str
+    password : str
+
+class Signup(BaseModel):
+    username : str
+    password : str
+    phone_email : str
+
+
+
 app = FastAPI()
+
+
 
 import random
 from html import escape
@@ -79,4 +93,30 @@ async def post(file: UploadFile, db: Session = Depends(get_db), description: str
 @app.get("/feed")
 def getFeed( db: Session = Depends(get_db)):
     return (db.query(models.Post).order_by(models.Post.id.desc()).all())
+
+
+import bcrypt
+@app.post("/login/")
+async def create_LogIn(login: Login):
+    try:
+        with Session(engine) as session:
+            u = session.query(models.User).filter(models.User.username == login.username)
+            return bcrypt.checkpw(login.password,list(u)[0].passwordSalt.encode("utf-8")) 
+    except IndexError as e:
+        return "No User"
+
+    
+@app.post("/signup/")
+async def create_signup(signup: Signup):  
+        with Session(engine) as session:
+            u = session.query(models.User).filter(models.User.username == models.User.username)
+            if len(list(u)) != 0:
+                return -1
+            salt = bcrypt.gensalt()
+            hash = bcrypt.hashpw(signup.password.encode('utf-8'), salt)
+            db_user = models.User(username = signup.username, passwordSalt=hash , phone_email = signup.phone_email)
+            session.add(db_user)
+            session.commit()
+            return "OK"
+    
 
