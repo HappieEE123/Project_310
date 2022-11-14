@@ -1,6 +1,6 @@
 from typing import Union
 import time
-from fastapi import FastAPI, File, UploadFile, Depends, Form
+from fastapi import FastAPI, File, UploadFile, Depends, Form, Response, Cookie
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
@@ -12,7 +12,21 @@ from sqlalchemy.orm import Session
 from sqlalchemy import desc
 import ML
 
+from pydantic import BaseModel
+class Login(BaseModel):
+    username : str
+    password : str 
+
+class Signup(BaseModel):
+    username : str
+    password : str
+    phone_email : str
+
+
+
 app = FastAPI()
+
+
 
 import random
 from html import escape
@@ -74,9 +88,75 @@ async def post(file: UploadFile, db: Session = Depends(get_db), description: str
         f.write(request_object_content)
     return {"score":db_post.happiness/100}#["happiness"]}
 
+key = "uweDW^TDT#DH#FJ" # FOR DEMO ONLY! MUST BE DIFFERENT FOR PRODUCTION!
+secret  = "UIHWE&^X^&*$&#YHIOEJFIOEUF&*RYUH" # FOR DEMO ONLY! MUST BE DIFFERENT FOR PRODUCTION!
+
+def issue(exp_time, username):
+    JWT = {"username": username, "exp_time": exp_time}
+    msg=username+"=="+str(exp_time)+secret
+    # https://stackoverflow.com/questions/7585435/best-way-to-convert-string-to-bytes-in-python-3
+    signature = hmac.new(key.encode('utf-8'), msg = msg.encode('utf-8'), digestmod=hashlib.sha256).hexdigest()
+    JWT["signature"] = signature
+    return json.dumps(JWT)
 
 
 @app.get("/feed")
-def getFeed( db: Session = Depends(get_db)):
+def getFeed(db: Session = Depends(get_db)):
     return (db.query(models.Post).order_by(models.Post.id.desc()).all())
 
+
+import hmac
+import hashlib
+import base64
+import json
+import time
+
+import bcrypt 
+@app.post("/login/")
+async def LogIn(login: Login, response: Response):
+    try:
+        with Session(engine) as session:
+            u = session.query(models.User).filter(models.User.username == login.username)
+            if bcrypt.checkpw(login.password.encode("utf-8"),list(u)[0].passwordSalt):
+                response.set_cookie(key="token", value=issue(3600*24+time.time(), login.username))
+                return {"message": "Come to the dark side, we have cookies"} 
+            else:
+                return -1
+    except IndexError as e:
+        return "No User"
+
+    
+@app.post("/signup/")
+async def create_signup(signup: Signup, response: Response):  
+        with Session(engine) as session:
+            u = session.query(models.User).filter(models.User.username == signup.username)
+            if len(list(u)) != 0:
+                return -1
+            salt = bcrypt.gensalt()
+            hash = bcrypt.hashpw(signup.password.encode('utf-8'), salt)
+            db_user = models.User(username = signup.username, passwordSalt=hash , phone_email = signup.phone_email)
+            session.add(db_user)
+            session.commit()
+            return "OK"
+    
+
+def getUserName(JWT: str): #validate vs verify vs check
+    """
+    Check if the JWT is valid and if yes return the username. 
+    If the JWT is expired, exception ExpiredJWT will be raised.
+    If the JWT is forged, exception ForgedJWT will be raised
+    """
+    JWT = json.loads(JWT)
+    if time.time()>JWT["exp_time"]:
+        raise ExpiredJWT
+    msg=JWT["username"]+"=="+str(JWT["exp_time"])+secret
+    signature = hmac.new(key.encode('utf-8'), msg = msg.encode('utf-8'), digestmod=hashlib.sha256).hexdigest()
+    if signature != JWT["signature"]:
+        raise ForgedJWT
+    return JWT["username"]
+
+
+@app.get("/checkLogin")
+def checkLogin(token: str | None = Cookie(default=None)):
+    print(token)
+    return getUserName(token)
