@@ -75,7 +75,7 @@ the documentation for the backend is located in HappieEE123/Project_310/FastAPI-
 
 
 ## Tech Stack
-- Front End: Ionic + React 
+- Front End: Ionic + React
 - Backend: Python Fast API, Node.js for crash detector, bash for logging.
 - ML: TensorFlow was used to built the model, numpy and Pillow was used to process the data
 - Database: MySQL.
@@ -84,4 +84,22 @@ the documentation for the backend is located in HappieEE123/Project_310/FastAPI-
 ## a list of each feature you programmed for this assignment
 - for each item on that list, explain briefly how you used that feature to improve your
 system
+1. Login - using React Router, React, and React Dom Libraries to have a separate url for login page (6 points for libraries +1 point for feature)
+- The login page is connected to the rest of the app and grants access to the feed upon login, and is connected to the signup page for new users. 
+
+2. Signup - using React Router, React, and React Dom Libraries to have a separate url for signup page  (1 point for signup)
+- the signup page has been created to collect and store users information inorder to register them and grant them access to the app as authorized users. 
+
+3. Like Counts - Axios to get and update # of likes to and from the server (2+1 points)
+- Likes count feature is enabled, which is tracked through a counter and displayed on individual posts. 
+
+4. Happiness bar (1 point) 
+- Upon posting, the users happiness score is represented through the bar which is scored out of 100 maximum points. 
+
+5. GUI
+GUI for main components is complete.
+
+
+
+
 - for each explanation, give a snippet of the output that demonstrates your feature
