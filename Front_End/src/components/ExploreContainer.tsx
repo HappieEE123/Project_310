@@ -4,24 +4,6 @@ import Card from "./Card"
 // import "swiper/css";
 // import "swiper/css/bundle";
 // https://codesandbox.io/s/10st98?file=/src/App.jsx:83-134
-import {
-    IonContent,
-    IonHeader,
-    IonPage,
-    IonTitle,
-    IonToolbar,
-    IonCard,
-    IonCardHeader,
-    IonCardSubtitle,
-    IonCardTitle,
-    IonCardContent,
-    IonItem,
-    IonIcon,
-    IonLabel,
-    IonButton
-} from '@ionic/react';
-import {pin, wifi, wine, warning, walk, cellular} from 'ionicons/icons';
-import {faker} from '@faker-js/faker';
 import axios from 'axios';
 import {useEffect, useState} from "react";
 
