@@ -8,8 +8,6 @@ cos(x) & 3\sqrt{e} & x^6x\\
 \end{bmatrix}\cdot \vec p }{x^t\cdot \frac{d}{dt}(5^t)\cdot(\int^{8x}_{90x+90x^2}(t^e)dt)}\right)>0 \}
 $$
 
-## What has Changed since project 1
-
 ## //What is the project about? ###
 The purpose of our app, “happieEE”, is to determine if someone is happy or not.happieEE is a social media platform 
 that has a feed and can detect the emotions in a user’s posts.
@@ -81,7 +79,7 @@ the documentation for the backend is located in HappieEE123/Project_310/FastAPI-
 - ML: TensorFlow was used to built the model, numpy and Pillow was used to process the data
 - Database: MySQL.
 
-
+## What has Changed since project 1
 ## a list of each feature you programmed for this assignment
 - for each item on that list, explain briefly how you used that feature to improve your
 system
