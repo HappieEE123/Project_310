@@ -27,7 +27,7 @@ setupIonicReact({
   mode: 'ios',
 });
 
-var beforeChange: number;
+// var beforeChange: number;
 export default function Home() {
   // const [text, setData] = useState(window.innerWidth);//not error just 0 makes it disapear
   // function handleResize(){
@@ -44,7 +44,7 @@ export default function Home() {
   // handleResize();
   // window.addEventListener('resize', handleResize); //not posible for loop
   const [present] = useIonActionSheet();
-  const [result, setResult] = useState<OverlayEventDetail>();
+  // const [result, setResult] = useState<OverlayEventDetail>();
 
   function onFileChanged(event: React.ChangeEvent<HTMLInputElement>) {
     file = event.target.files![0];
@@ -79,7 +79,7 @@ export default function Home() {
           },
         },
       ],
-      onDidDismiss: ({ detail }) => setResult(detail),
+      // onDidDismiss: ({ detail }) => setResult(detail),
     })
   }
 

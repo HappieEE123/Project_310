@@ -56,7 +56,7 @@ const Card = ({postData}: Props) => {
                     </div> */}
                 </IonItem>
 
-                <img src={`https://api.weasoft.com/imgs/${postData.id}`}/>
+                <img src={`https://api.weasoft.com/imgs/${postData.id}`} alt={'happiEee :)'}/>
                 {/* <div style={{backgroundColor:"red"}}>................</div> */}
                 <div>
                     {/* <img id="avatar" src={faker.image.avatar()}/> */}

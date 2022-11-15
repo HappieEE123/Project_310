@@ -9,13 +9,13 @@ import {useEffect, useState} from "react";
 
 let vertical: Boolean = true;
 
-const user: Object[] = [
-    {
-        firstName: 'Joe',
-        lastName: 'Mama',
-        avatar: 'https://cdn-icons-png.flaticon.com/512/194/194938.png'
-    }
-];
+// const user: Object[] = [
+//     {
+//         firstName: 'Joe',
+//         lastName: 'Mama',
+//         avatar: 'https://cdn-icons-png.flaticon.com/512/194/194938.png'
+//     }
+// ];
 
 
 const ExploreContainer = () => {
