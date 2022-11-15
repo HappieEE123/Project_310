@@ -6,7 +6,7 @@ import os
 
 try:
     with open("/home/wg25r/PSDSQL","r") as f: 
-        SQLPWD = f.read() 
+        SQLPWD = f.read()  
     SQLALCHEMY_DATABASE_URL = "mysql+pymysql://wg25r:"+SQLPWD+"@localhost/COSC310"
 
     engine = create_engine(SQLALCHEMY_DATABASE_URL)
@@ -15,9 +15,9 @@ try:
     Base = declarative_base()
 
 except:
-    SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
+    SQLALCHEMY_DATABASE_URL = "sqlite:///a.db"
 
     engine = create_engine(SQLALCHEMY_DATABASE_URL)
     SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-    Base = declarative_base()
+    Base = declarative_base() 

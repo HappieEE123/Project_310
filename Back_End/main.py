@@ -6,7 +6,6 @@ from fastapi.staticfiles import StaticFiles
 
 import models
 from db import engine, SessionLocal
-models.Base.metadata.create_all(bind=engine)
 import crud, models, schemas
 from sqlalchemy.orm import Session
 from sqlalchemy import desc
@@ -23,22 +22,31 @@ class Signup(BaseModel):
     phone_email : str
 
 
+class Likes(BaseModel):
+    postid: int
+
+print("a")
+models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 import random
 from html import escape
-replacements = {
-    "fuck","f**k",
-    "shit","s**t",
-    "dick","d**k",
-    "' and 1=1","Chill",
-    "happieeee","happieee",
-}
+
 def anitizor(str):
     return str
+
+
+
+
 
 app.mount("/imgs", StaticFiles(directory="imgs"), name="imgs")
 
@@ -51,17 +59,7 @@ def get_db():
         db.close()
 
 
-origins = [
-    "*",
-]
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 
 @app.get("/heartBeat")
@@ -80,7 +78,8 @@ async def post(file: UploadFile, db: Session = Depends(get_db), description: str
     request_object_content = await file.read()
     res = ML.getScore(request_object_content)
 
-    db_post = models.Post(user_id = 1, date = time.time(), description=anitizor(description), happiness=[int(res*100) if res!=-1 else random.randint(10,100)], commentCounts=0, likesCount=0)
+    db_post = models.Post(user_id = 1, date = time.time(), description=description, happiness=[int(res*100) if res!=-1 else random.randint(10,100)],
+     commentCounts=0, likesCount=0)
     db.add(db_post)
     db.commit()
     db.refresh(db_post)
@@ -102,7 +101,7 @@ def issue(exp_time, username):
 
 @app.get("/feed")
 def getFeed(db: Session = Depends(get_db)):
-    return (db.query(models.Post).order_by(models.Post.id.desc()).all())
+    return (db.query(models.Post).order_by(models.Post.id.desc())).all()
 
 
 import hmac
@@ -160,3 +159,12 @@ def getUserName(JWT: str): #validate vs verify vs check
 def checkLogin(token: str | None = Cookie(default=None)):
     print(token)
     return getUserName(token)
+
+
+@app.post("/likes")
+def likes(l: Likes, db:Session=Depends(get_db)):
+    old = db.query(models.Post).filter(models.Post.id == l.postid)
+    print(old[0].likesCount+1)
+    old.update({"likesCount":old[0].likesCount+1})
+    db.commit()
+    return "LOL You liked this. OK, great. See you later."
