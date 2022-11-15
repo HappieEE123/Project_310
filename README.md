@@ -86,19 +86,17 @@ the documentation for the backend is located in HappieEE123/Project_310/FastAPI-
 system
 1. Login - using React Router, React, and React Dom Libraries to have a separate url for login page (6 points for libraries +1 point for feature)
 - The login page is connected to the rest of the app and grants access to the feed upon login, and is connected to the signup page for new users. 
-
+![Login](https://github.com/HappieEE123/Project_310/blob/2db917711289f4691fd00371237c6f28f411eff6/imgs/image%202.PNG) 
 2. Signup - using React Router, React, and React Dom Libraries to have a separate url for signup page  (1 point for signup)
 - the signup page has been created to collect and store users information inorder to register them and grant them access to the app as authorized users. 
-
+![Signup](https://github.com/HappieEE123/Project_310/blob/2db917711289f4691fd00371237c6f28f411eff6/imgs/image%203.PNG) 
 3. Like Counts - Axios to get and update # of likes to and from the server (2+1 points)
 - Likes count feature is enabled, which is tracked through a counter and displayed on individual posts. 
-
-4. Happiness bar (1 point) 
-- Upon posting, the users happiness score is represented through the bar which is scored out of 100 maximum points. 
-
-5. GUI
+![Likes count before](https://github.com/HappieEE123/Project_310/blob/2db917711289f4691fd00371237c6f28f411eff6/imgs/image.jpg) 
+![Likes count after](https://github.com/HappieEE123/Project_310/blob/2db917711289f4691fd00371237c6f28f411eff6/imgs/image%202.jpg)
+4. GUI
 GUI for main components is complete.
-
+![GUI](https://github.com/HappieEE123/Project_310/blob/2db917711289f4691fd00371237c6f28f411eff6/imgs/image%204.PNG) 
 
 
 
