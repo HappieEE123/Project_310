@@ -21,7 +21,6 @@ import {addOutline, camera, paperPlaneOutline} from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 import React, {useState} from 'react';
-import type {OverlayEventDetail} from '@ionic/core';
 
 setupIonicReact({
   mode: 'ios',
