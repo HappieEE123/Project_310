@@ -83,11 +83,9 @@ export default function Login() {
       <IonRow>
         <IonCol>
           <IonItem>
-           <IonLabel position="floating"> Password</IonLabel>
-           <IonInput
+          <IonLabel position="floating">Password</IonLabel>
+                   <IonInput type="password" required onIonChange={(e: any) => setPassword(e.target.value)}>
 
-
-         >
            </IonInput>
           </IonItem>
         </IonCol>
