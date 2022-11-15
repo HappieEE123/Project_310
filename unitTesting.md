@@ -1,6 +1,6 @@
 # User Auth Testing
 This is an extenal library made by myself (github.com/weathon/JWT)
-![https://api.weasoft.com/imgs/45](https://api.weasoft.com/imgs/45)
+![](https://media.discordapp.net/attachments/1018952616736210994/1041974528999444530/unknown.png)
 ## Test for Issuing JWT token
 For each test case, a random username was generated and used to issue the token. Then we use the get username function to get the username. If the two usernames are matched, the test case is passed.
 ## Testing for expired issuing
@@ -21,7 +21,7 @@ For each case, a random nonexistent username was used to login. If login failedm
 ## Wrong password login 
 For each case, we tested to login with wrong password. If login failedm the case is passed.
 # Main App API Testing
-![https://api.weasoft.com/imgs/46](https://api.weasoft.com/imgs/46)
+![](https://media.discordapp.net/attachments/1018952616736210994/1041974721073393804/unknown.png)
 This image was hosted on our own app.
 ## Test for heart beat
 This test will send a request to the heartbeat api, if the server is running, it should return 200. If the return code is 200, the case is passed.
