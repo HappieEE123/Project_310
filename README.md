@@ -83,6 +83,7 @@ the documentation for the backend is located in HappieEE123/Project_310/FastAPI-
 ## a list of each feature you programmed for this assignment
 - for each item on that list, explain briefly how you used that feature to improve your
 system
+- for each explanation, give a snippet of the output that demonstrates your feature
 1. Login - using React Router, React, and React Dom Libraries to have a separate url for login page (6 points for libraries +1 point for feature)
 - The login page is connected to the rest of the app and grants access to the feed upon login, and is connected to the signup page for new users. 
 ![Login](https://github.com/HappieEE123/Project_310/blob/2db917711289f4691fd00371237c6f28f411eff6/imgs/image%202.PNG) 
@@ -99,4 +100,4 @@ GUI for main components is complete.
 
 
 
-- for each explanation, give a snippet of the output that demonstrates your feature
+
