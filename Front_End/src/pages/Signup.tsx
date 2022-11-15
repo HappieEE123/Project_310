@@ -34,7 +34,7 @@ export default function Signup() {
     const [password, setPassword] = useState('');
 
     const signup = () => {
-        axios.post('https://api.weasoft.com/signup/', {
+        axios.post('https://api.weasoft.com/signup', {
             firstName,
             lastName,
             username,

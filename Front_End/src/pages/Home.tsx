@@ -94,7 +94,7 @@ export default function Home() {
     formData.append("file", file);
     formData.append("description",(document.getElementById("description") as HTMLInputElement).value);
     const request = new XMLHttpRequest();
-    request.open("POST", "https://api.weasoft.com/post/");
+    request.open("POST", "https://api.weasoft.com/post");
 
     request.addEventListener("readystatechange", () => {
       console.log(request.readyState);

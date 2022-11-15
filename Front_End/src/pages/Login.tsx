@@ -32,7 +32,7 @@ export default function Login() {
     const [password, setPassword] = useState('');
 
     const login = () => {
-        axios.post('https://api.weasoft.com/login/', {
+        axios.post('https://api.weasoft.com/login', {
             username,
             password,
         })
