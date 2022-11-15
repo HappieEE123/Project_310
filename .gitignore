@@ -1,2 +1,7 @@
 Back_End/nohup.out
 Back_End/__pycache__/*
+.idea
+
+Front_End/.idea
+Front_End/node_modules
+Back_End/.idea
