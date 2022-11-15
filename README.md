@@ -32,6 +32,7 @@ nohup node index.js > status.log & # Run the crash detector
 ```
 
 ### Front End
+
 Run:
 ```bash
 npm install -g @ionic/cli
