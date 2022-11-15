@@ -4,36 +4,18 @@ import Card from "./Card"
 // import "swiper/css";
 // import "swiper/css/bundle";
 // https://codesandbox.io/s/10st98?file=/src/App.jsx:83-134
-import {
-    IonContent,
-    IonHeader,
-    IonPage,
-    IonTitle,
-    IonToolbar,
-    IonCard,
-    IonCardHeader,
-    IonCardSubtitle,
-    IonCardTitle,
-    IonCardContent,
-    IonItem,
-    IonIcon,
-    IonLabel,
-    IonButton
-} from '@ionic/react';
-import {pin, wifi, wine, warning, walk, cellular} from 'ionicons/icons';
-import {faker} from '@faker-js/faker';
 import axios from 'axios';
 import {useEffect, useState} from "react";
 
 let vertical: Boolean = true;
 
-const user: Object[] = [
-    {
-        firstName: 'Joe',
-        lastName: 'Mama',
-        avatar: 'https://cdn-icons-png.flaticon.com/512/194/194938.png'
-    }
-];
+// const user: Object[] = [
+//     {
+//         firstName: 'Joe',
+//         lastName: 'Mama',
+//         avatar: 'https://cdn-icons-png.flaticon.com/512/194/194938.png'
+//     }
+// ];
 
 
 const ExploreContainer = () => {
@@ -42,7 +24,7 @@ const ExploreContainer = () => {
 
     useEffect(() => {
         const fetchData = async() => {
-            await axios.get('https://api.weasoft.com/feed/')
+            await axios.get('https://api.weasoft.com/feed')
                 .then((res) => {
                     setPostData(res.data);
                 })

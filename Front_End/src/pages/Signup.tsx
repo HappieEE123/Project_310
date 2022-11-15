@@ -34,13 +34,15 @@ export default function Signup() {
     const [password, setPassword] = useState('');
 
     const signup = () => {
-        axios.post('https://api.weasoft.com/signup/', {
+        axios.post('https://api.weasoft.com/signup', {
+            firstName,
+            lastName,
             username,
             password,
             'phone_email': email
         })
             .then(function (response) {
-                if (response.status == 200) {
+                if (response.status === 200) {
                     // redirect to home page
                     history.push('/home')
                 }
@@ -74,7 +76,7 @@ export default function Signup() {
                 <IonRow>
                     <IonCol>
                         <IonItem>
-                            
+
                             <IonLabel position="floating">First Name</IonLabel>
                             <IonInput type="text" required onIonChange={(e: any) => setFirstName(e.target.value)}>
                             </IonInput>
@@ -125,7 +127,7 @@ export default function Signup() {
                 <IonRow>
                     <IonCol>
                         <p style={{fontSize: "small"}}>
-                            By clicking Sign Up you agree to our <a href="#">Policy</a>
+                            By clicking Sign Up you agree to our <a href="/policy">Policy</a>
                         </p>
                         <IonButton expand="block" onClick={() => {
                             // console.log({

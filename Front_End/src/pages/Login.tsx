@@ -32,7 +32,7 @@ export default function Login() {
     const [password, setPassword] = useState('');
 
     const login = () => {
-        axios.post('https://api.weasoft.com/login/', {
+        axios.post('https://api.weasoft.com/login', {
             username,
             password,
         })
@@ -82,19 +82,21 @@ export default function Login() {
 
       <IonRow>
         <IonCol>
-          <IonItem>
-          <IonLabel position="floating">Password</IonLabel>
-                   <IonInput type="password" required onIonChange={(e: any) => setPassword(e.target.value)}>
 
-           </IonInput>
-          </IonItem>
+
+            <IonItem>
+                <IonLabel position="floating">Password</IonLabel>
+                <IonInput type="password" required onIonChange={(e: any) => setPassword(e.target.value)}>
+                </IonInput>
+            </IonItem>
+
         </IonCol>
       </IonRow>
 
                 <IonRow>
                     <IonCol>
                         <p style={{fontSize: "small"}}>
-                            By clicking Login you agree to our <a href="#">Policy</a>
+                            By clicking Login you agree to our <a href="/policy">Policy</a>
                         </p>
                         <IonButton expand="block" onClick={() => {
                             // console.log({

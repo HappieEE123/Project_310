@@ -1,5 +1,6 @@
 import React from 'react';
-import { IonList, IonItem, IonSelect, IonSelectOption } from '@ionic/react';
+import {IonItem, IonList, IonSelect, IonSelectOption} from '@ionic/react';
+
 function popup() {
   return (
     <IonList>

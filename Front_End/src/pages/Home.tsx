@@ -1,15 +1,32 @@
-import { IonContent, IonModal, IonButtons, useIonActionSheet, IonProgressBar, IonButton, IonItem, IonInput, IonList, IonBackButton, IonTextarea, IonFab, IonFabButton, IonIcon, IonHeader, IonPage, IonTitle, IonToolbar, setupIonicReact } from '@ionic/react';
-import { camera, addOutline, paperPlaneOutline } from 'ionicons/icons';
+import {
+  IonButton,
+  IonButtons,
+  IonContent,
+  IonFab,
+  IonFabButton,
+  IonHeader,
+  IonIcon,
+  IonItem,
+  IonList,
+  IonModal,
+  IonPage,
+  IonProgressBar,
+  IonTextarea,
+  IonTitle,
+  IonToolbar,
+  setupIonicReact,
+  useIonActionSheet
+} from '@ionic/react';
+import {addOutline, camera, paperPlaneOutline} from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
-import React, { useState } from 'react';
-import type { OverlayEventDetail } from '@ionic/core';
+import React, {useState} from 'react';
 
 setupIonicReact({
   mode: 'ios',
 });
 
-var beforeChange: number;
+// var beforeChange: number;
 export default function Home() {
   // const [text, setData] = useState(window.innerWidth);//not error just 0 makes it disapear
   // function handleResize(){
@@ -18,15 +35,15 @@ export default function Home() {
   //     var tmp:number = text;
   //     tmp = window.innerHeight*9/16;
   //     console.log("tmp",tmp)
-  //     setData(tmp)  
+  //     setData(tmp)
   //   }
   // }
   var file: File; //https://stackoverflow.com/questions/51722363/create-file-object-type-in-typescript
   const [isOpen, setIsOpen] = useState(false);
   // handleResize();
-  // window.addEventListener('resize', handleResize); //not posible for loop 
+  // window.addEventListener('resize', handleResize); //not posible for loop
   const [present] = useIonActionSheet();
-  const [result, setResult] = useState<OverlayEventDetail>();
+  // const [result, setResult] = useState<OverlayEventDetail>();
 
   function onFileChanged(event: React.ChangeEvent<HTMLInputElement>) {
     file = event.target.files![0];
@@ -61,7 +78,7 @@ export default function Home() {
           },
         },
       ],
-      onDidDismiss: ({ detail }) => setResult(detail),
+      // onDidDismiss: ({ detail }) => setResult(detail),
     })
   }
 
@@ -77,7 +94,7 @@ export default function Home() {
     formData.append("file", file);
     formData.append("description",(document.getElementById("description") as HTMLInputElement).value);
     const request = new XMLHttpRequest();
-    request.open("POST", "https://api.weasoft.com/post/");
+    request.open("POST", "https://api.weasoft.com/post");
 
     request.addEventListener("readystatechange", () => {
       console.log(request.readyState);
@@ -87,7 +104,7 @@ export default function Home() {
         console.log("could not fetch the data");
       }
     });
-    
+
     request.send(formData);
 
   }
@@ -128,7 +145,7 @@ export default function Home() {
           <IonContent>
             <form>
               <IonList>
-                {/* 
+                {/*
                 <IonItem>
                   <IonInput placeholder="Title" id="title"></IonInput>
                 </IonItem> */}
