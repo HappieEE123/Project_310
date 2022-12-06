@@ -1,6 +1,6 @@
 from typing import Union
 import time
-from fastapi import FastAPI, File, UploadFile, Depends, Form, Response, Cookie
+from fastapi import FastAPI, File, UploadFile, Depends, Form, Response, Cookie, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
@@ -59,7 +59,9 @@ def get_db():
         db.close()
 
 
-
+@app.get("/coffee")
+def coffee():
+    raise HTTPException(status_code=418)
 
 
 @app.get("/heartBeat")
@@ -116,7 +118,7 @@ async def LogIn(login: Login, response: Response):
     try:
         with Session(engine) as session:
             u = session.query(models.User).filter(models.User.username == login.username)
-            if bcrypt.checkpw(login.password.encode("utf-8"),list(u)[0].passwordSalt):
+            if bcrypt.checkpw(login.password.encode("utf-8"),list(u)[0].passwordSalt.encode("utf-8")):# 
                 response.set_cookie(key="token", value=issue(3600*24+time.time(), login.username))
                 return {"message": "Come to the dark side, we have cookies"} 
             else:

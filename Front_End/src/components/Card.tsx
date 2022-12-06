@@ -48,7 +48,8 @@ const Card = ({postData}: Props) => {
                     {/* <div className="chip">
                         <div className='filledChip'> */}
                     <div className="chip"
-                         style={{backgroundImage: "url('/assets/a.jpg')", backgroundSize: "100% 100%"}}>
+                     style={{backgroundColor: "white", backgroundSize: "100% 100%"}}>
+                     <div style={{backgroundColor:"LightSkyBlue", width:postData.happiness + "%",  height: "inherit" }}></div>
                         <IonLabel color="primary"
                                   style={{fontSize: "small"}}><b>{postData.happiness + "% Happy"}</b></IonLabel>
                     </div>
