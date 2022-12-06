@@ -99,7 +99,12 @@ export default function Home() {
     request.addEventListener("readystatechange", () => {
       console.log(request.readyState);
       if (request.readyState === 4 && request.status === 200) {
-        alert(`The happiness score is ${Math.round(JSON.parse(request.responseText).score*1000)/10}`)
+        alert(`The happiness score is ${Math.round(JSON.parse(request.responseText).score*1000)/10}`);
+        if(Math.round(JSON.parse(request.responseText).score*1000)/10 > 50)
+        {
+          alert("Looks like you are happy! And I am here to make you sad! Try to solve this ochem problem!")
+          
+        }
       } else if (request.readyState === 4) {
         console.log("could not fetch the data");
       }
