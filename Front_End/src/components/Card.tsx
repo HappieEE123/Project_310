@@ -1,7 +1,7 @@
 import './Card.css';
 import {IonAvatar, IonCard, IonCardContent, IonCardSubtitle, IonIcon, IonItem, IonLabel} from '@ionic/react';
 import {chatboxEllipsesOutline, thumbsUpOutline} from 'ionicons/icons';
-
+import { useState } from 'react';
 import {faker} from '@faker-js/faker';
 import React from "react";
 import axios from "axios";
@@ -12,6 +12,7 @@ interface Props {
 }
 
 const Card = ({postData}: Props) => {
+    const [count, setCount] = useState(postData.likesCount);
     console.log('hello');
     const UNIX2String = (unixTime: number) => {
         const date = new Date(unixTime * 1000);
@@ -19,8 +20,10 @@ const Card = ({postData}: Props) => {
     }
 
     const addLikes = (postId: number) => {
+        console.log(postId)
+        setCount(count+1);
         axios.post('https://api.weasoft.com/likes', {
-            postId
+            postid: postId
         })
             .then(function (response) {
                 console.log(response);
@@ -72,7 +75,7 @@ const Card = ({postData}: Props) => {
                          onClick={() => addLikes(postData.id)}
                          style={{cursor: 'pointer'}}>
                 </IonIcon>
-                {postData.likesCount} &nbsp;
+                {count} &nbsp;
                 <IonIcon icon={chatboxEllipsesOutline}
                          onClick={() => showComments(postData.id)}
                          style={{cursor: 'pointer'}}>

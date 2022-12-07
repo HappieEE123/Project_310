@@ -1,0 +1,34 @@
+import * as lodash from 'lodash';
+import * as semver from 'semver';
+import { CommandInstanceInfo, CommandLineInputs, CommandLineOptions, IonicCapacitorOptions, ProjectIntegration } from '../../definitions';
+import { Command } from '../../lib/command';
+import type { CapacitorCLIConfig, Integration as CapacitorIntegration } from '../../lib/integrations/capacitor';
+import { CapacitorAndroidManifest } from '../../lib/integrations/capacitor/android';
+import { CapacitorJSONConfig, CapacitorConfig } from '../../lib/integrations/capacitor/config';
+import { CapacitorIosInfo } from '../../lib/integrations/capacitor/ios';
+export declare abstract class CapacitorCommand extends Command {
+    private _integration?;
+    get integration(): Required<ProjectIntegration>;
+    getGeneratedConfig(platform: string): Promise<CapacitorJSONConfig>;
+    getGeneratedConfigPath(platform: string): Promise<string>;
+    getAndroidManifest(): Promise<CapacitorAndroidManifest>;
+    getAndroidManifestPath(): Promise<string>;
+    getiOSAppInfo(): Promise<CapacitorIosInfo>;
+    getiOSAppInfoPath(): Promise<string>;
+    getGeneratedConfigDir(platform: string): Promise<string>;
+    getCapacitorCLIConfig(): Promise<CapacitorCLIConfig | undefined>;
+    getCapacitorConfig(): Promise<CapacitorConfig | undefined>;
+    getCapacitorIntegration: (() => Promise<CapacitorIntegration>) & lodash.MemoizedFunction;
+    getCapacitorVersion: (() => Promise<semver.SemVer>) & lodash.MemoizedFunction;
+    isCorePlatform(platform: string): boolean;
+    getInstalledPlatforms(): Promise<string[]>;
+    isPlatformInstalled(platform: string): Promise<boolean>;
+    checkCapacitor(runinfo: CommandInstanceInfo): Promise<void>;
+    preRunChecks(runinfo: CommandInstanceInfo): Promise<void>;
+    runCapacitor(argList: string[]): Promise<void>;
+    runBuild(inputs: CommandLineInputs, options: CommandLineOptions): Promise<void>;
+    runServe(inputs: CommandLineInputs, options: CommandLineOptions): Promise<void>;
+    checkForPlatformInstallation(platform: string): Promise<void>;
+    installPlatform(platform: string): Promise<void>;
+    protected createOptionsFromCommandLine(inputs: CommandLineInputs, options: CommandLineOptions): Promise<IonicCapacitorOptions>;
+}
