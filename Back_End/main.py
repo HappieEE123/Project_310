@@ -49,6 +49,7 @@ def anitizor(str):
 
 
 app.mount("/imgs", StaticFiles(directory="imgs"), name="imgs")
+app.mount("/questions", StaticFiles(directory="questions"), name="imgs")
 
 # Dependency https://fastapi.tiangolo.com/tutorial/sql-databases/#__tabbed_2_3
 def get_db():
@@ -168,3 +169,12 @@ def likes(l: Likes, db:Session=Depends(get_db)):
     old.update({"likesCount":old[0].likesCount+1})
     db.commit()
     return "LOL You liked this. OK, great. See you later."
+
+
+@app.get("/check")
+def checkQuestion(qID, ans):
+    if qID == 1 and ans == "D":
+        return True
+    elif qID==2 and ans == "A":
+        return True
+    return False
