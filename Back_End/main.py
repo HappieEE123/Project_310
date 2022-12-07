@@ -180,7 +180,7 @@ def checkQuestion(qID, ans):
     if qID == "1" and ans == "D":
         return True
     elif qID=="2" and ans == "A":
-        return Tru 
+        return True 
     return False
 
 import vonage 
