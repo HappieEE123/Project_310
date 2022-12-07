@@ -92,8 +92,14 @@ export default function Home() {
       url: `https://api.weasoft.com/check?qID=${qID}&ans=${e.target.id}`,
     })
       .then(function (response) {
-        console.log(response.data)
+        alert(response.data)
       });
+
+      axios.post('https://api.weasoft.com/sendSMS', {
+        qID: qID,
+        number: (document.getElementById("number") as HTMLInputElement).value
+      })
+
   }
 
   function send() {
