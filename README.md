@@ -59,7 +59,9 @@ Components:
   - This is where we prepare data to be shown in the Card component. We fetch data from our API on this component and pass it onto the Card component
  - Popup
   - This component sends a popup to the user showing information passed into the component
-
+ - Question Card
+  - A Card showing a OChem question and answer choices
+  
 Pages:
  - Home
   - The Home page is the landing page that the users will first see when they go on the app. This is also where the global feed is to see user posts
@@ -94,6 +96,12 @@ system
 - Likes count feature is enabled, which is tracked through a counter and displayed on individual posts. 
 ![Likes count before](https://github.com/HappieEE123/Project_310/blob/2db917711289f4691fd00371237c6f28f411eff6/imgs/image.jpg) 
 ![Likes count after](https://github.com/HappieEE123/Project_310/blob/2db917711289f4691fd00371237c6f28f411eff6/imgs/image%202.jpg)
+
+## Changed Since Last Group Assignment
+- Added a question card asking users a ochem question to make them sad if they are happy
+- added a feature allowing user to send the question to its number
+- added some animation after upload the image
+
 4. GUI
 GUI for main components is complete.
 ![GUI](https://github.com/HappieEE123/Project_310/blob/2db917711289f4691fd00371237c6f28f411eff6/imgs/image%204.PNG) 
