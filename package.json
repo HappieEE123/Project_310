@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@ionic/cli": "^6.20.4"
+    "@ionic/cli": "^6.20.4",
+    "matter-js": "^0.18.0"
   }
 }
