@@ -177,9 +177,9 @@ def likes(l: Likes, db:Session=Depends(get_db)):
 
 @app.get("/check")
 def checkQuestion(qID, ans):
-    if qID == 1 and ans == "D":
+    if qID == "1" and ans == "D":
         return True
-    elif qID==2 and ans == "A":
+    elif qID=="2" and ans == "A":
         return Tru 
     return False
 

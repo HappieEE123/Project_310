@@ -17,10 +17,11 @@ import {
   setupIonicReact,
   useIonActionSheet
 } from '@ionic/react';
-import {addOutline, camera, paperPlaneOutline} from 'ionicons/icons';
+import { addOutline, camera, paperPlaneOutline } from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import axios from "axios";
 
 setupIonicReact({
   mode: 'ios',
@@ -40,6 +41,8 @@ export default function Home() {
   // }
   var file: File; //https://stackoverflow.com/questions/51722363/create-file-object-type-in-typescript
   const [isOpen, setIsOpen] = useState(false);
+  const qID = Math.round(Math.random()) +1
+  const [openQuestion, setopenQuestion] = useState(false);
   // handleResize();
   // window.addEventListener('resize', handleResize); //not posible for loop
   const [present] = useIonActionSheet();
@@ -81,7 +84,17 @@ export default function Home() {
       // onDidDismiss: ({ detail }) => setResult(detail),
     })
   }
-
+  function checkAns(e: any)
+  {
+    console.log(e.target.id)
+    axios({
+      method: 'get',
+      url: `https://api.weasoft.com/check?qID=${qID}&ans=${e.target.id}`,
+    })
+      .then(function (response) {
+        console.log(response.data)
+      });
+  }
 
   function send() {
 
@@ -92,17 +105,17 @@ export default function Home() {
     //https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects
 
     formData.append("file", file);
-    formData.append("description",(document.getElementById("description") as HTMLInputElement).value);
+    formData.append("description", (document.getElementById("description") as HTMLInputElement).value);
     const request = new XMLHttpRequest();
     request.open("POST", "https://api.weasoft.com/post");
 
     request.addEventListener("readystatechange", () => {
       console.log(request.readyState);
       if (request.readyState === 4 && request.status === 200) {
-        alert(`The happiness score is ${Math.round(JSON.parse(request.responseText).score*1000)/10}`);
-        if(Math.round(JSON.parse(request.responseText).score*1000)/10 > 50)
-        {
+        alert(`The happiness score is ${Math.round(JSON.parse(request.responseText).score * 1000) / 10}`);
+        if (Math.round(JSON.parse(request.responseText).score * 1000) / 10 > 50) {
           alert("Looks like you are happy! And I am here to make you sad! Try to solve this ochem problem!")
+          setopenQuestion(true);
           
         }
       } else if (request.readyState === 4) {
@@ -184,7 +197,18 @@ export default function Home() {
           </IonContent>
         </IonModal>
 
-
+        <IonModal isOpen={openQuestion}>
+          <IonContent>
+          <p>Original Question Made by the same author as the app. (He thinks OChem is hard so he pass the pain to the users)</p>
+          <img src={"https://api.weasoft.com/questions/"+qID}/>
+          If you want a copy of this question, please put your number here
+          <input type="number" id="number"></input>
+      <IonButton shape="round" id="A" onClick={checkAns}>A</IonButton>
+      <IonButton shape="round" id="B" onClick={checkAns}>B</IonButton>
+      <IonButton shape="round" id="C" onClick={checkAns}>C</IonButton>
+      <IonButton shape="round" id="D" onClick={checkAns}>D</IonButton>
+      </IonContent> 
+        </IonModal>
       </IonContent >
     </IonPage >
 
