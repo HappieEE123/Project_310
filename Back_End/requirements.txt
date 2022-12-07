@@ -9,3 +9,5 @@ python-multipart
 opencv-python
 sqlalchemy
 cryptography #?
+vonage
+bcrypt

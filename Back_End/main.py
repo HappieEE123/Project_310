@@ -20,7 +20,9 @@ class Signup(BaseModel):
     username : str
     password : str
     phone_email : str
-
+class snedSMS(BaseModel):
+    number: str
+    qID: int
 
 class Likes(BaseModel):
     postid: int
@@ -49,7 +51,7 @@ def anitizor(str):
 
 
 app.mount("/imgs", StaticFiles(directory="imgs"), name="imgs")
-app.mount("/questions", StaticFiles(directory="questions"), name="imgs")
+app.mount("/questions", StaticFiles(directory="questions"), name="questions")
 
 # Dependency https://fastapi.tiangolo.com/tutorial/sql-databases/#__tabbed_2_3
 def get_db():
@@ -157,7 +159,7 @@ def getUserName(JWT: str): #validate vs verify vs check
 
 
 @app.get("/checkLogin")
-def checkLogin(token: str | None = Cookie(default=None)):
+def checkLogin(token = Cookie(default=None)):
     print(token)
     return getUserName(token)
 
@@ -171,10 +173,34 @@ def likes(l: Likes, db:Session=Depends(get_db)):
     return "LOL You liked this. OK, great. See you later."
 
 
+
+
 @app.get("/check")
 def checkQuestion(qID, ans):
     if qID == 1 and ans == "D":
         return True
     elif qID==2 and ans == "A":
-        return True
+        return Tru 
     return False
+
+import vonage 
+client = vonage.Client(key="0e66cd09", secret="xMgepqTzTe221dvz")
+sms = vonage.Sms(client)
+
+
+
+
+@app.post("/sendSMS")
+def send(smsO: snedSMS):
+    responseData = sms.send_message(
+        {
+            "from": "12404508545",
+            "to": smsO.number,
+            "text": f"https://api.weasoft.com/questions/{smsO.qID}\nThe answer is {[0,'D','A'][smsO.qID]}",
+        }
+    )
+
+    if responseData["messages"][0]["status"] == "0":
+        return "Message sent successfully."
+    else:
+        return f"Message failed with error: {responseData['messages'][0]['error-text']}"
